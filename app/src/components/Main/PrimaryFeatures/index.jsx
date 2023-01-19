@@ -26,9 +26,14 @@ const features = [
     description: 'Столы и стулья с покрытием из пластика или стекла в любой комплектации и различном цветовом решении',
 	image: 'https://yagoda-mebel.ru/upload/iblock/2d1/l59fw80lecrwfxl0wygkess2uoky67z5.jpg'
   },
+//   {
+//     title: 'Мебель для детской',
+//     description: 'Наборы для детских комнат с кроватями с детскими матрасами и без них в различном цветовом решении.',
+// 	image: 'https://yagoda-mebel.ru/upload/iblock/2d1/l59fw80lecrwfxl0wygkess2uoky67z5.jpg'
+//   },
 ]
 
-export function PrimaryFeatures() {
+export default function PrimaryFeatures() {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 
   useEffect(() => {
@@ -84,7 +89,7 @@ export function PrimaryFeatures() {
                       className={clsx(
                         'group relative rounded-full py-1 px-4 lg:rounded-r-none lg:rounded-l-xl lg:p-6',
                         selectedIndex === featureIndex
-                          ? 'bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10'
+                          ? 'bg-white lg:bg-white/10'
                           : 'hover:bg-white/10 lg:hover:bg-white/5'
                       )}
                     >
