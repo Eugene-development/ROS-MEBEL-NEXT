@@ -2,7 +2,7 @@ import Head from 'next/head'
 import MainLayout from '@/components/Layouts/MainLayout'
 import Information from '@/components/Main/Information'
 
-const heading = 'Вопросы по замеру'
+const heading = 'Вопросы по замеру помещения'
 const info = [
     {
         question: 'Услуга замера платная?',
