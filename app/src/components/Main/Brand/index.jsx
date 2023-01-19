@@ -21,7 +21,7 @@ export default function Brand () {
         <>
             <div className="mt-10 mb-4 lg:mt-12">
                 <p className="font-display text-base text-center text-slate-900">
-                Брэнды, которым мы доверяем
+                Фурнитура, которой мы доверяем:
                 </p>
                 <ul
                 role="list"

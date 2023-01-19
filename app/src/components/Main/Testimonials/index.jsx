@@ -6,69 +6,70 @@ import avatarImage2 from '@/images/avatars/avatar-2.png'
 import avatarImage3 from '@/images/avatars/avatar-3.png'
 import avatarImage4 from '@/images/avatars/avatar-4.png'
 import avatarImage5 from '@/images/avatars/avatar-5.png'
+import avatarImage6 from '@/images/avatars/face.jpeg';
 
-const testimonials = [
-  [
-    {
-      content:
-        'TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
-      author: {
-        name: 'Sheryl Berge',
-        role: 'CEO at Lynch LLC',
-        image: avatarImage1,
-      },
-    },
-    {
-      content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
-      author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
-        image: avatarImage4,
-      },
-    },
-  ],
-  [
-    {
-      content:
-        'The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
-      author: {
-        name: 'Leland Kiehn',
-        role: 'Founder of Kiehn and Sons',
-        image: avatarImage5,
-      },
-    },
-    {
-      content:
-        'There are so many things I had to do with my old software that I just don’t do at all with TaxPal. Suspicious but I can’t say I don’t love it.',
-      author: {
-        name: 'Erin Powlowski',
-        role: 'COO at Armstrong Inc',
-        image: avatarImage2,
-      },
-    },
-  ],
-  [
-    {
-      content:
-        'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
-      author: {
-        name: 'Peter Renolds',
-        role: 'Founder of West Inc',
-        image: avatarImage3,
-      },
-    },
-    {
-      content:
-        'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
-      author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
-        image: avatarImage4,
-      },
-    },
-  ],
-]
+	const testimonials = [
+		[
+			{
+				content:
+					'Давно мечтала о шкафе-купе, но не могла найти подходящий в магазинах. Но когда я узнала о возможности заказать мебель на заказ, решила попробовать. И я не пожалела! Нашла эту фирму. Шкаф превосходно соответствует моим пожеланиям и идеально вписывается в интерьер комнаты. Я очень довольна моей покупкой!',
+				author: {
+					name: 'Ася',
+					role: '11 января 2023',
+					image: avatarImage4
+				}
+			},
+			{
+				content:
+					'Я очень доволен своей покупкой кухонного гарнитура. Мебель оказалась не только красивой, но и очень качественной. Кухня стала выглядеть еще более стильной и привлекательной с этой мебелью. В общем рекомендую!!!',
+				author: {
+					name: 'Саня',
+					role: '12 октября 2022',
+					image: avatarImage6
+				}
+			}
+		],
+		[
+			{
+				content:
+					'Лучший опыт это собственный. Не пожалел. Заказ был сложный и недешёвый для нашего бюджета. Молодцы что справились и сделали гарнитур по моим желаниям.',
+				author: {
+					name: 'Сергей Викторович Вавилов',
+					role: '17 февраля 2022',
+					image: avatarImage5
+				}
+			},
+			{
+				content:
+					'В этой компании заказала вместительную гардеробную и с нетерпением ждала ее доставки. Когда она пришла, я была в восторге! Гардеробная оказалась еще более вместительной, чем я ожидала. Я могу спокойно хранить там все свои вещи и не боюсь, что они запутаются. Гардеробная очень красивая и качественная, я рекомендую компанию Азбука Комфорта всем, кто ищет вместительное и красивое хранение для своих вещей.',
+				author: {
+					name: 'Оленька',
+					role: '30 июня 2022',
+					image: avatarImage2
+				}
+			}
+		],
+		[
+			{
+				content:
+					'Я на прошлой неделе купил шкаф для балкона и очень доволен своей покупкой. Удобная мебель, которая решила мою проблему с хранением на балконе. Шкаф оказался не только практичным, но и красивым, идеально вписывается в интерьер балкона. Я рекомендую эту мебель для тех, кто ищет хорошее решение для хранения на балконе. Отдельное спасибо сборщикам.',
+				author: {
+					name: 'Ринат А.',
+					role: '22 мая 2022',
+					image: avatarImage3
+				}
+			},
+			{
+				content:
+					'Спасибо за быстро выполненную работу! Обязательно обратимся за мебелью ещё в следующем году. Мы с мужем очень довольны.))',
+				author: {
+					name: 'Татьяна Р.',
+					role: '22 ноября 2021',
+					image: avatarImage1
+				}
+			}
+		]
+	];
 
 function QuoteIcon(props) {
   return (
