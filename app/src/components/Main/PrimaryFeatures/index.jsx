@@ -12,28 +12,19 @@ import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll',
-    description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+    title: 'Шкафы',
+    description: "Красивые и практичные шкафы любого размера под заказ для вашей спальни, балкона или прихожей",
+    image: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV1/shkaf.jpeg',
   },
   {
-    title: 'Claim expenses',
-    description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+    title: 'Кухонные гарнитуры',
+    description: 'Вместительные и качественные кухонные гарнитуры под любой размер кухни и со всеми пожеланиями заказчика',
+	image: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV1/kitchen.jpeg',
   },
   {
-    title: 'VAT handling',
-    description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
-  },
-  {
-    title: 'Reporting',
-    description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
+    title: 'Обеденные группы',
+    description: 'Столы и стулья с покрытием из пластика или стекла в любой комплектации и различном цветовом решении',
+	image: 'https://yagoda-mebel.ru/upload/iblock/2d1/l59fw80lecrwfxl0wygkess2uoky67z5.jpg'
   },
 ]
 
@@ -70,13 +61,12 @@ export function PrimaryFeatures() {
         unoptimized
       />
       <Container className="relative">
-        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
+        <div className="max-w-2xl mx-auto text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Наш каталог мебели
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            Приобретая мебель на заказ через наш каталог, вы получаете за разумную цену именно то что хотели и что подходит по размерам вашему помещению. А наши замерщики и консультанты помогут вам не ошибиться и сделать правильный выбор. Позиции вариантов мебели в каталоге постоянно пополняются.
           </p>
         </div>
         <Tab.Group
@@ -135,7 +125,7 @@ export function PrimaryFeatures() {
                       </p>
                     </div>
                     <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <Image
+                      <img
                         className="w-full"
                         src={feature.image}
                         alt=""
