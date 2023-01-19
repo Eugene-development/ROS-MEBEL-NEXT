@@ -63,10 +63,10 @@ export default function Catalog() {
         <div className="relative -mt-80">
           <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2 lg:gap-8">
-              {tiers.map((tier) => (
-                <div key={tier.name} className="flex flex-col rounded-3xl bg-white shadow-xl ring-1 ring-black/10">
+              {tiers.map((tier, i) => (
+                <div key={i} className="flex flex-col rounded-3xl bg-white shadow-xl ring-1 ring-black/10">
                   <div className="p-8 sm:p-10">
-                    <h3 className="text-lg font-semibold leading-8 tracking-tight text-red-900" id={tier.id}>
+                    <h3 className="text-lg font-semibold leading-8 tracking-tight text-red-900" >
                       {tier.name}
                     </h3>
                     <div className="mt-4 flex items-baseline text-3xl font-bold tracking-tight text-gray-900">
@@ -77,8 +77,8 @@ export default function Catalog() {
                   <div className="flex flex-1 flex-col p-2">
                     <div className="flex flex-1 flex-col justify-between rounded-2xl bg-gray-50 p-6 sm:p-8">
                       <ul role="list" className="space-y-6">
-                        {tier.features.map((feature) => (
-                          <li key={feature} className="flex items-start">
+                        {tier.features.map((feature, i) => (
+                          <li key={i} className="flex items-start">
                             <div className="flex-shrink-0">
                               <CheckIcon className="h-6 w-6 text-red-900" aria-hidden="true" />
                             </div>

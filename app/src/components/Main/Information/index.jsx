@@ -25,7 +25,6 @@ function classNames(...classes) {
 }
 
 export default function Information(prop) {
-    console.log(prop)
   return (
     <div className="bg-white">
 

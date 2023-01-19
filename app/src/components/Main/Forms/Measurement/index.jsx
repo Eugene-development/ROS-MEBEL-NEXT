@@ -22,11 +22,15 @@ import { is_visible_form_measurement } from '@/apollo/stores/visible'
 
 export default function FormMeasurement() {
   const isVisibleFormMeasurement = useReactiveVar(is_visible_form_measurement)
-  const [name, setName] = useState();
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [time, setTime] = useState('');
+  const [address, setAddress] = useState('');
+  const [comment, setComment] = useState('');
 
   function handleSubmit(event) {
     event.preventDefault();
-    const formData = { name };
+    const formData = { name, phone, time, address, comment };
     // send form data to server
     console.log(formData);
     }
@@ -99,6 +103,7 @@ export default function FormMeasurement() {
                               <div className="mt-1">
                                 <input
                                   required
+                                  value={phone} onChange={e => setPhone(e.target.value)}
                                   type="tel"
                                   name="phoneForm"
                                   id="phone"
@@ -112,6 +117,7 @@ export default function FormMeasurement() {
                               </label>
                               <div className="mt-1">
                                 <input
+                                  value={time} onChange={e => setTime(e.target.value)}
                                   type="text"
                                   name="timeForm"
                                   id="time"
@@ -126,6 +132,7 @@ export default function FormMeasurement() {
                               <div className="mt-1">
                                 <input
                                   required
+                                  value={address} onChange={e => setAddress(e.target.value)}
                                   type="text"
                                   name="addressForm"
                                   id="address"
@@ -139,11 +146,11 @@ export default function FormMeasurement() {
                               </label>
                               <div className="mt-1">
                                 <textarea
+                                  value={comment} onChange={e => setComment(e.target.value)}
                                   id="comment"
                                   name="commentForm"
                                   rows={4}
                                   className="block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm"
-                                  defaultValue={''}
                                 />
                               </div>
                             </div>
