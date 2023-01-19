@@ -131,7 +131,7 @@ export default function PrimaryFeatures() {
                     </div>
                     <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                       <img
-                        className="w-full"
+                        className="w-full object-cover h-[38rem]"
                         src={feature.image}
                         alt=""
                         sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
