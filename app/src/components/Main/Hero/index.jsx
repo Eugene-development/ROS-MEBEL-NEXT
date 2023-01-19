@@ -20,7 +20,7 @@ export default function Hero() {
 
   return (
     <>
-            <div className="isolate bg-white">
+    <div className="isolate bg-white">
       {/* <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
@@ -50,7 +50,7 @@ export default function Hero() {
       </div> */}
       <main>
         <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl pt-10 pb-16 sm:pt-16 sm:pb-18">
+          <div className="mx-auto max-w-7xl pt-10 pb-16 sm:pt-20 sm:pb-18">
             <div>
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
