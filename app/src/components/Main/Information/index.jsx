@@ -32,13 +32,13 @@ export default function Information(prop) {
       {/* Branded FAQ */}
       <div className="bg-blue-800">
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
-          <h2 className="text-3xl font-bold tracking-tight text-white">{prop.heading}</h2>
+          <h2 className="text-4xl font-bold tracking-tight text-white">{prop.heading}</h2>
           <div className="mt-6 border-t border-blue-400 border-opacity-25 pt-10">
             <dl className="space-y-10 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12 md:space-y-0">
               {prop.info.map((item, i) => (
                 <div key={i}>
                   <dt className="text-lg font-medium leading-6 text-white">{item.question}</dt>
-                  <dd className="mt-2 text-base text-blue-200">{item.answer}</dd>
+                  <dd className="mt-2 text-base text-blue-100">{item.answer}</dd>
                 </div>
               ))}
             </dl>
