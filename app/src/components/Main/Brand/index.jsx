@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-
 import logoHettich from '@/images/logos/hettich-international.svg';
 import logoBlum from '@/images/logos/blum.svg';
 import logoGrass from '@/images/logos/grass.svg';
@@ -17,30 +16,28 @@ const brands = [
     { name: 'GTV', logo: logoGTV }
 ];
 
-
 export default function Brand () {
     return (
         <>
-      <div className="mt-10 lg:mt-12">
-        <p className="font-display text-base text-center text-slate-900">
-          Брэнды, которым мы доверяем
-        </p>
-        <ul
-          role="list"
-          className=" flex items-center justify-center gap-x-8 sm:gap-x-10 xl:gap-x-12"
-        >
-          {brands.map((company, groupIndex) => (
-            <li key={groupIndex}>
-              <div
-                className="flex px-2 items-center gap-y-8 flex-row sm:gap-x-12 sm:gap-y-0"
-              >
-                <Image src={company.logo} alt={company.name} unoptimized />
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-
+            <div className="mt-10 mb-4 lg:mt-12">
+                <p className="font-display text-base text-center text-slate-900">
+                Брэнды, которым мы доверяем
+                </p>
+                <ul
+                role="list"
+                className=" flex items-center justify-center gap-x-8 sm:gap-x-10 xl:gap-x-12"
+                >
+                {brands.map((company, groupIndex) => (
+                    <li key={groupIndex}>
+                    <div
+                        className="flex px-2 items-center gap-y-8 flex-row sm:gap-x-12 sm:gap-y-0"
+                    >
+                        <Image src={company.logo} alt={company.name} unoptimized />
+                    </div>
+                    </li>
+                ))}
+                </ul>
+            </div>
         </>
     )
 }

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import MainLayout from '@/components/Layouts/MainLayout';
 import Hero from '@/components/Main/Hero'
 import { PrimaryFeatures } from '@/components/Main/PrimaryFeatures';
-// import Brand from '@/components/Main/Brand';
+import Brand from '@/components/Main/Brand';
 
 export default function Home() {
     return (
@@ -13,7 +13,7 @@ export default function Home() {
                 </Head>
 
                 <Hero/>
-                {/* <Brand/> */}
+                <Brand/>
                 <PrimaryFeatures/>
             </MainLayout>
         </>

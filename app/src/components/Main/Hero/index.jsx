@@ -137,7 +137,6 @@ export default function Hero() {
         </div>
       </main>
     </div>
-<Brand/>
     </>
   )
 }
