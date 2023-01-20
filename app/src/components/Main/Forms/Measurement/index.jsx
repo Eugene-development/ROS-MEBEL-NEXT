@@ -1,17 +1,4 @@
- /*
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+import axios from 'axios';
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
@@ -22,20 +9,26 @@ import { is_visible_form_measurement } from '@/apollo/stores/visible'
 
 export default function FormMeasurement() {
   const isVisibleFormMeasurement = useReactiveVar(is_visible_form_measurement)
-  const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
-  const [time, setTime] = useState('');
-  const [address, setAddress] = useState('');
-  const [comment, setComment] = useState('');
+  const [nameForm, setNameForm] = useState('');
+  const [phoneForm, setPhoneForm] = useState('');
+  const [timeForm, setTimeForm] = useState('');
+  const [addressForm, setAddressForm] = useState('');
+  const [commentForm, setCommentForm] = useState('');
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    const formData = { name, phone, time, address, comment };
-    // send form data to server
-    console.log(formData);
+  const url = `/send-main-form-azbuka`;
+    const apiMail = {
+        baseURL: process.env.NEXT_PUBLIC_API_MAIL,
+        headers: {
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_TOKEN}`
+        }
+    };
+  async function handleSubmit(event) {
+    console.log(apiMail)
+        event.preventDefault();
+        const formData = { nameForm, phoneForm, timeForm, addressForm, commentForm };
+        await axios.post(url, formData, apiMail);
+        is_visible_form_measurement(false)
     }
-
-//   const [open, setOpen] = useState(isVisibleFormMeasurement)
 
   return (
     <Transition.Root show={isVisibleFormMeasurement} as={Fragment}>
@@ -88,7 +81,7 @@ export default function FormMeasurement() {
                               <div className="mt-1">
                                 <input
                                   required
-                                  value={name} onChange={e => setName(e.target.value)}
+                                  value={nameForm} onChange={e => setNameForm(e.target.value)}
                                   type="text"
                                   name="nameForm"
                                   id="name"
@@ -103,7 +96,7 @@ export default function FormMeasurement() {
                               <div className="mt-1">
                                 <input
                                   required
-                                  value={phone} onChange={e => setPhone(e.target.value)}
+                                  value={phoneForm} onChange={e => setPhoneForm(e.target.value)}
                                   type="tel"
                                   name="phoneForm"
                                   id="phone"
@@ -117,7 +110,7 @@ export default function FormMeasurement() {
                               </label>
                               <div className="mt-1">
                                 <input
-                                  value={time} onChange={e => setTime(e.target.value)}
+                                  value={timeForm} onChange={e => setTimeForm(e.target.value)}
                                   type="text"
                                   name="timeForm"
                                   id="time"
@@ -132,7 +125,7 @@ export default function FormMeasurement() {
                               <div className="mt-1">
                                 <input
                                   required
-                                  value={address} onChange={e => setAddress(e.target.value)}
+                                  value={addressForm} onChange={e => setAddressForm(e.target.value)}
                                   type="text"
                                   name="addressForm"
                                   id="address"
@@ -146,7 +139,7 @@ export default function FormMeasurement() {
                               </label>
                               <div className="mt-1">
                                 <textarea
-                                  value={comment} onChange={e => setComment(e.target.value)}
+                                  value={commentForm} onChange={e => setCommentForm(e.target.value)}
                                   id="comment"
                                   name="commentForm"
                                   rows={4}

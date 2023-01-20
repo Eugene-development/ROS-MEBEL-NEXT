@@ -5,7 +5,7 @@ import { Bars3Icon, PhoneIcon } from '@heroicons/react/24/outline'
 const InfoMenu = () => {
     return (
         <>
-        <div className="px-6 py-2 lg:px-8 bg-blue-900">
+        <div className="px-6 py-2 lg:px-8 bg-black border-b-2">
             <div>
                 <nav className="flex  items-left justify-between" aria-label="Global">
                     <div
