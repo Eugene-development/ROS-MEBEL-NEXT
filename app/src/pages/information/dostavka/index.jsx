@@ -32,7 +32,7 @@ export default function Delivery () {
         <>
             <MainLayout>
                 <Head>
-                    <title>Доставка</title>
+                    <title>{process.env.NEXT_PUBLIC_COMPANY} | Доставка</title>
                 </Head>
 
                 <Information heading={heading} info={info} />

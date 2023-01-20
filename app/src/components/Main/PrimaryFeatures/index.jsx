@@ -26,11 +26,16 @@ const features = [
     description: 'Столы и стулья с покрытием из пластика или стекла в любой комплектации и различном цветовом решении',
 	image: 'https://yagoda-mebel.ru/upload/iblock/2d1/l59fw80lecrwfxl0wygkess2uoky67z5.jpg'
   },
-//   {
-//     title: 'Мебель для детской',
-//     description: 'Наборы для детских комнат с кроватями с детскими матрасами и без них в различном цветовом решении.',
-// 	image: 'https://yagoda-mebel.ru/upload/iblock/2d1/l59fw80lecrwfxl0wygkess2uoky67z5.jpg'
-//   },
+  {
+    title: 'Мебель для детской',
+    description: 'Наборы для детских комнат с кроватями с детскими матрасами и без них в различном цветовом решении.',
+	image: 'https://yagoda-mebel.ru/upload/iblock/2d1/l59fw80lecrwfxl0wygkess2uoky67z5.jpg'
+  },
+  {
+    title: 'Офисная мебель',
+    description: 'Наборы для детских комнат с кроватями с детскими матрасами и без них в различном цветовом решении.',
+	image: 'https://yagoda-mebel.ru/upload/iblock/2d1/l59fw80lecrwfxl0wygkess2uoky67z5.jpg'
+  },
 ]
 
 export default function PrimaryFeatures() {
@@ -131,7 +136,7 @@ export default function PrimaryFeatures() {
                     </div>
                     <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                       <img
-                        className="w-full object-cover h-[38rem]"
+                        className="w-full object-cover h-[45rem]"
                         src={feature.image}
                         alt=""
                         sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"

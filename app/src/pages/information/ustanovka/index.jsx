@@ -32,7 +32,7 @@ export default function Installation () {
         <>
             <MainLayout>
                 <Head>
-                    <title>Установка</title>
+                    <title>{process.env.NEXT_PUBLIC_COMPANY} | Установка</title>
                 </Head>
 
                 <Information heading={heading} info={info} />

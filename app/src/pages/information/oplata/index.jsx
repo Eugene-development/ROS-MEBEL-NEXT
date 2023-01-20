@@ -32,7 +32,7 @@ export default function Payment () {
         <>
             <MainLayout>
                 <Head>
-                    <title>Оплата</title>
+                    <title>{process.env.NEXT_PUBLIC_COMPANY} | Оплата</title>
                 </Head>
 
                 <Information heading={heading} info={info} />

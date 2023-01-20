@@ -32,7 +32,7 @@ export default function Measurement () {
         <>
             <MainLayout>
                 <Head>
-                    <title>Замер</title>
+                    <title>{process.env.NEXT_PUBLIC_COMPANY} | Замер</title>
                 </Head>
 
                 <Information heading={heading} info={info} />
