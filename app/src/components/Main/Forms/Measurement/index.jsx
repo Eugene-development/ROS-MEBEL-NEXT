@@ -23,7 +23,6 @@ export default function FormMeasurement() {
         }
     };
   async function handleSubmit(event) {
-    console.log(apiMail)
         event.preventDefault();
         const formData = { nameForm, phoneForm, timeForm, addressForm, commentForm };
         await axios.post(url, formData, apiMail);
