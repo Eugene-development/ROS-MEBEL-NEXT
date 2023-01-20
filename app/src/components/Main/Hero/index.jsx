@@ -50,7 +50,7 @@ export default function Hero() {
       </div> */}
       <main>
         <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl pt-10 pb-16 sm:pt-20 sm:pb-18">
+          <div className="mx-auto max-w-7xl pt-10 pb-16 sm:pt-16 sm:pb-16">
             <div>
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
@@ -64,7 +64,7 @@ export default function Hero() {
                 </div>
               </div>
               <div>
-                <h1 className="max-w-7xl text-3xl font-bold tracking-tight sm:text-center sm:text-7xl">
+                <h1 className="max-w-7xl text-3xl font-bold tracking-tight sm:text-center sm:text-6xl">
                     <span className="relative whitespace-nowrap text-blue-600">
                         <svg
                             aria-hidden="true"

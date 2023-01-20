@@ -19,7 +19,7 @@ const brands = [
 export default function Brand () {
     return (
         <>
-            <div className="mt-10 mb-4 lg:mt-12">
+            <div className="mt-8 mb-4 lg:mt-10">
                 <p className="font-display text-base text-center text-slate-900">
                 Фурнитура, которой мы доверяем:
                 </p>

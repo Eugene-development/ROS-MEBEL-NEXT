@@ -30,13 +30,12 @@ const Menu = () => {
                         </button>
                     </div>
                     <div
-                        className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-7 text-gray-50 hover:text-gray-100"
+                        className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-8 text-gray-50 hover:text-gray-100"
                     >
+                        <Link href="/" className="font-semibold">Главная</Link>
                         <Link href="/catalog" className="font-semibold">Каталог</Link>
-                        <Link href="/information/zamer" className="font-semibold">Замер</Link>
-                        <Link href="/information/dostavka" className="font-semibold">Доставка</Link>
-                        <Link href="/information/ustanovka" className="font-semibold">Сборка</Link>
-                        <Link href="/information/oplata" className="font-semibold">Оплата</Link>
+                        <Link href="/blog" className="font-semibold">Блог</Link>
+                        <Link href="/#" className="font-semibold">Вакансии</Link>
                         <Link href="/contacts" className="font-semibold">Контакты</Link>
                     </div>
                     <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
