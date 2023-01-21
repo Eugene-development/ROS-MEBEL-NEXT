@@ -36,7 +36,7 @@ const Menu = () => {
                         <Link href="/catalog" className="font-semibold">Каталог</Link>
                         <Link href="/actions" className="font-semibold">Акции</Link>
                         <Link href="/blog" className="font-semibold">Блог</Link>
-                        <Link href="/#" className="font-semibold">Вакансии</Link>
+                        <Link href="/vacancy" className="font-semibold">Вакансии</Link>
                         <Link href="/contacts" className="font-semibold">Контакты</Link>
                     </div>
                     <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
