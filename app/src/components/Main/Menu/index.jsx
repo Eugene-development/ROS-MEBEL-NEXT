@@ -5,7 +5,7 @@ import { Bars3Icon, PhoneIcon } from '@heroicons/react/24/outline'
 const Menu = () => {
     return (
         <>
-        <div className="px-6 py-4 lg:px-8 bg-black">
+        <div className="px-6 py-4 lg:px-8 bg-gray-900">
             <div>
                 <nav className="flex h-9 items-center justify-between" aria-label="Global">
                     <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">

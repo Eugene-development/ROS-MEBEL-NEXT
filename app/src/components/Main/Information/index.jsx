@@ -29,7 +29,7 @@ export default function Information(prop) {
     <div className="bg-white">
 
       {/* Branded FAQ */}
-      <div className="bg-blue-800">
+      <div className="bg-blue-900">
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <h2 className="text-4xl font-bold tracking-tight text-white">{prop.heading}</h2>
           <div className="mt-6 border-t border-blue-400 border-opacity-25 pt-10">
