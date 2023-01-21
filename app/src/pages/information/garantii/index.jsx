@@ -26,7 +26,7 @@ const info = [
     },
 ]
 
-export default function Garantii () {
+export default function () {
     return (
         <>
             <MainLayout>

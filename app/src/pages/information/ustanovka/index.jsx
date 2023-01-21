@@ -26,7 +26,7 @@ const info = [
     },
 ]
 
-export default function Installation () {
+export default function () {
 
     return (
         <>

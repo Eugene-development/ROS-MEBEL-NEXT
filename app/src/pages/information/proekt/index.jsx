@@ -26,7 +26,7 @@ const info = [
     },
 ]
 
-export default function Proekt () {
+export default function () {
     return (
         <>
             <MainLayout>

@@ -26,7 +26,7 @@ const info = [
     },
 ]
 
-export default function Measurement () {
+export default function () {
 
     return (
         <>

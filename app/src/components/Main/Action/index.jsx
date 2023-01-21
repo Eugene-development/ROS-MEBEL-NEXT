@@ -2,12 +2,12 @@ export default function Action () {
     return (
         <>
 
-		{/* <div class=" py-8 sm:py-12">
-			<div class="relative sm:py-16">
-				<div aria-hidden="true" class="hidden sm:block">
-					<div class="absolute inset-y-0 left-0 w-1/2 bg-gray-50 rounded-r-3xl" />
+		{/* <div className=" py-8 sm:py-12">
+			<div className="relative sm:py-16">
+				<div aria-hidden="true" className="hidden sm:block">
+					<div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50 rounded-r-3xl" />
 					<svg
-						class="absolute top-8 left-1/2 -ml-3"
+						className="absolute top-8 left-1/2 -ml-3"
 						width="404"
 						height="392"
 						fill="none"
@@ -22,43 +22,43 @@ export default function Action () {
 								height="20"
 								patternUnits="userSpaceOnUse"
 							>
-								<rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+								<rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
 							</pattern>
 						</defs>
 						<rect width="404" height="392" fill="url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)" />
 					</svg>
 				</div>
-				<div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+				<div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
 					<div
-						class="relative rounded-2xl px-6 py-10 bg-blue-500 overflow-hidden shadow-xl sm:px-12 sm:py-20"
+						className="relative rounded-2xl px-6 py-10 bg-blue-500 overflow-hidden shadow-xl sm:px-12 sm:py-20"
 					>
-						<div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
+						<div aria-hidden="true" className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
 							<svg
-								class="absolute inset-0 h-full w-full"
+								className="absolute inset-0 h-full w-full"
 								preserveAspectRatio="xMidYMid slice"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 1463 360"
 							>
 								<path
-									class="text-blue-600 text-opacity-40"
+									className="text-blue-600 text-opacity-40"
 									fill="currentColor"
 									d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"
 								/>
 								<path
-									class="text-blue-800 text-opacity-40"
+									className="text-blue-800 text-opacity-40"
 									fill="currentColor"
 									d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"
 								/>
 							</svg>
 						</div>
-						<a href={link} class="relative" sveltekit:prefetch>
-							<div class="sm:text-center">
-								<h2 class="my-4 text-2xl font-extrabold text-white tracking-tight md:text-5xl">
+						<a href={link} className="relative" sveltekit:prefetch>
+							<div className="sm:text-center">
+								<h2 className="my-4 text-2xl font-extrabold text-white tracking-tight md:text-5xl">
 									{action}
 								</h2>
-								<span class="text-5xl md:text-7xl font-extrabold text-white">{price}</span>
-								<p class="mt-6 mx-auto max-w-2xl text-lg text-blue-50">
+								<span className="text-5xl md:text-7xl font-extrabold text-white">{price}</span>
+								<p className="mt-6 mx-auto max-w-2xl text-lg text-blue-50">
 									{description}
 								</p>
 							</div>
@@ -68,12 +68,13 @@ export default function Action () {
 			</div>
 		</div> */}
 
-{true && 		<div class="py-8 sm:py-12">
-			<div class="relative sm:py-16">
-				<div aria-hidden="true" class="hidden sm:block">
-					<div class="absolute inset-y-0 left-0 w-1/2 bg-gray-50 rounded-r-3xl" />
+{true &&
+        <div className="py-8 sm:py-12">
+			<div className="relative sm:py-16">
+				<div aria-hidden="true" className="hidden sm:block">
+					<div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50 rounded-r-3xl" />
 					<svg
-						class="absolute top-8 left-1/2 -ml-3"
+						className="absolute top-8 left-1/2 -ml-3"
 						width="404"
 						height="392"
 						fill="none"
@@ -88,39 +89,39 @@ export default function Action () {
 								height="20"
 								patternUnits="userSpaceOnUse"
 							>
-								<rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+								<rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
 							</pattern>
 						</defs>
 						<rect width="404" height="392" fill="url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)" />
 					</svg>
 				</div>
-				<div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+				<div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
 					<div
-						class="relative rounded-2xl px-6 py-10 bg-blue-700 overflow-hidden shadow-xl sm:px-12 sm:py-20"
+						className="relative rounded-2xl px-6 py-10 bg-blue-700 overflow-hidden shadow-xl sm:px-12 sm:py-20"
 					>
-						<div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
+						<div aria-hidden="true" className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
 							<svg
-								class="absolute inset-0 h-full w-full"
+								className="absolute inset-0 h-full w-full"
 								preserveAspectRatio="xMidYMid slice"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 1463 360"
 							>
 								<path
-									class="text-blue-600 text-opacity-40"
+									className="text-blue-600 text-opacity-40"
 									fill="currentColor"
 									d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"
 								/>
 								<path
-									class="text-blue-800 text-opacity-40"
+									className="text-blue-800 text-opacity-40"
 									fill="currentColor"
 									d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"
 								/>
 							</svg>
 						</div>
-						<div class="relative">
-							<div class="sm:text-center">
-								<h2 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
+						<div className="relative">
+							<div className="sm:text-center">
+								<h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
 									Акций на данный момент нет
 								</h2>
 							</div>

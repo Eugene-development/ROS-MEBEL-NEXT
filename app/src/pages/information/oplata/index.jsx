@@ -26,7 +26,7 @@ const info = [
     },
 ]
 
-export default function Payment () {
+export default function () {
 
     return (
         <>

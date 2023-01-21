@@ -26,7 +26,7 @@ const info = [
     },
 ]
 
-export default function Delivery () {
+export default function () {
 
     return (
         <>
