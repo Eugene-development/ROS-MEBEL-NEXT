@@ -2,7 +2,7 @@ import Head from 'next/head'
 import MainLayout from '@/components/Layouts/MainLayout';
 import Action from "@/components/Main/Action"
 
-export default function Actions () {
+export default function () {
     return (
         <>
             <MainLayout>
