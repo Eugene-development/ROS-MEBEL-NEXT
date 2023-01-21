@@ -61,7 +61,7 @@ const textHTML = `
 `;
 
 
-export default function () {
+export default () => {
     return (
         <>
             <MainLayout>

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import MainLayout from '@/components/Layouts/MainLayout';
 import Catalog from "@/components/Main/Catalog";
 
-export default function () {
+export default () => {
     return (
         <>
             <MainLayout>

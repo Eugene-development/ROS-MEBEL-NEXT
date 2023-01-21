@@ -57,7 +57,7 @@ const textHTML = `
         </div>
 `;
 
-export default function () {
+export default () => {
     return (
         <>
             <MainLayout>

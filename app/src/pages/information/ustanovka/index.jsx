@@ -26,7 +26,7 @@ const info = [
     },
 ]
 
-export default function () {
+export default () => {
 
     return (
         <>

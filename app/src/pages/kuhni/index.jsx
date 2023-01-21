@@ -1,16 +1,16 @@
 import Head from 'next/head'
 import MainLayout from '@/components/Layouts/MainLayout';
-import Action from "@/components/Main/Action"
+import Category from '@/components/Main/Category'
 
 export default () => {
     return (
         <>
             <MainLayout>
                 <Head>
-                    <title>{process.env.NEXT_PUBLIC_COMPANY} | Акции</title>
+                    <title>Контакты</title>
                 </Head>
 
-                <Action/>
+                <Category/>
             </MainLayout>
         </>
     )

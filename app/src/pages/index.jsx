@@ -5,7 +5,7 @@ import PrimaryFeatures from '@/components/Main/PrimaryFeatures';
 import Brand from '@/components/Main/Brand';
 import Testimonials from '@/components/Main/Testimonials';
 
-export default function Home() {
+export default () => {
     return (
         <>
             <MainLayout>

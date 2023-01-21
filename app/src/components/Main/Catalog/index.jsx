@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { is_visible_form_measurement } from '@/apollo/stores/visible'
 import { CheckIcon } from '@heroicons/react/24/outline'
 
@@ -5,7 +6,7 @@ const tiers = [
   {
     id: 'tier-hobby',
     name: 'Категория',
-    href: '#',
+    href: 'shkafi',
     category: 'Шкафы корпусные',
     description: 'Посмотрите шкафы различного наполнения и цветового решения в нашем каталоге. Работаем по индивидуальным заказам.',
     features: [
@@ -20,7 +21,7 @@ const tiers = [
   {
     id: 'tier-team',
     name: 'Категория',
-    href: '#',
+    href: 'kuhni',
     category: 'Кухонные гарнитуры',
     description: 'Любой кухонные гарнитуры, которые вы закажите из каталога может быть выполнен в любой комплектации и любого размера.',
     features: [
@@ -36,7 +37,7 @@ const tiers = [
 
 export default function Catalog() {
   return (
-    <div className="">
+    <div className="bg-gray-900">
       <div className="relative overflow-hidden pt-24 pb-96 lg:pt-32">
         <div>
           <img
@@ -87,13 +88,13 @@ export default function Catalog() {
                         ))}
                       </ul>
                       <div className="mt-8">
-                        <a
+                        <Link
                           href={tier.href}
                           className="inline-block w-full rounded-lg bg-red-900 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-red-800"
                           aria-describedby={tier.id}
                         >
                           Подробнее
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
