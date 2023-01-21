@@ -1,8 +1,8 @@
 /*
-  This example requires Tailwind CSS v2.0+ 
-  
+  This example requires Tailwind CSS v2.0+
+
   This example requires some changes to your config:
-  
+
   ```
   // tailwind.config.js
   module.exports = {
@@ -14,6 +14,9 @@
   }
   ```
 */
+
+import Link from "next/link"
+
 const categories = [
   {
     name: 'Handcrafted Collection',
@@ -38,18 +41,18 @@ const categories = [
   },
 ]
 
-export default function Example() {
+export default function Category(props) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Shop by Collection</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Категории шкафов</h2>
         <p className="mt-4 text-base text-gray-500">
-          Each season, we collaborate with world-class designers to create a collection inspired by the natural world.
+          Выберите подходящую под ваши нужды категорию шкафов. Комплектацию, цвет и размер вы можете поменять.
         </p>
 
         <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
-          {categories.map((category) => (
-            <a key={category.name} href={category.href} className="group block">
+          {props && props?.types.map((category, i) => (
+            <Link key={i} href={category.href} className="mb-16 group block transition ease-in-out hover:scale-105">
               <div
                 aria-hidden="true"
                 className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg group-hover:opacity-75 lg:aspect-w-5 lg:aspect-h-6"
@@ -57,12 +60,12 @@ export default function Example() {
                 <img
                   src={category.imageSrc}
                   alt={category.imageAlt}
-                  className="h-full w-full object-cover object-center"
+                  className="h-80 w-full object-cover object-center"
                 />
               </div>
               <h3 className="mt-4 text-base font-semibold text-gray-900">{category.name}</h3>
               <p className="mt-2 text-sm text-gray-500">{category.description}</p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
