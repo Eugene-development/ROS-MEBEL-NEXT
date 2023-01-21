@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import MainLayout from '@/components/Layouts/MainLayout';
 import Hero from '@/components/Main/Hero'
-import PrimaryFeatures from '@/components/Main/PrimaryFeatures';
 import Brand from '@/components/Main/Brand';
+import PrimaryFeatures from '@/components/Main/PrimaryFeatures';
 import Testimonials from '@/components/Main/Testimonials';
+import Service from '@/components/Main/Service';
 
 export default () => {
     return (
@@ -17,6 +18,8 @@ export default () => {
                 <Hero/>
                 <Brand/>
                 <PrimaryFeatures/>
+                {/* <Service/> */}
+                <Service/>
                 <Testimonials/>
             </MainLayout>
         </>
