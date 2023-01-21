@@ -9,7 +9,7 @@ export async function getServerSideProps(context) {
 		key: '1'
 	};
 	const catalog = await request(url, ALL_RUBRIC, variables);
-    console.log(catalog);
+    // console.log(catalog);
   return {
     props: {catalog}, // will be passed to the page component as props
   }
