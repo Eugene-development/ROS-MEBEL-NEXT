@@ -74,7 +74,7 @@ export default function Blog() {
           {posts.map((post) => (
             <div key={post.title} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
               <div className="flex-shrink-0">
-                <img className="h-64 w-full object-cover" src={post.imageUrl} alt="фото поста" />
+                <img className="h-80 w-full object-cover" src={post.imageUrl} alt="фото поста" />
               </div>
               <div className="flex flex-1 flex-col justify-between bg-white p-6">
                 <div className="flex-1">
