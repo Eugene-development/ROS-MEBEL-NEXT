@@ -6,7 +6,7 @@ const tiers = [
   {
     id: 'tier-hobby',
     name: 'Категория',
-    href: 'shkafi',
+    href: 'shkafy',
     category: 'Шкафы корпусные',
     description: 'Посмотрите шкафы различного наполнения и цветового решения в нашем каталоге. Работаем по индивидуальным заказам.',
     features: [

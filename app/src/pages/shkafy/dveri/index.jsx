@@ -3,6 +3,15 @@ import MainLayout from '@/components/Layouts/MainLayout';
 import BreadCrumbs from '@/components/Main/BreadCrumbs';
 import ProductList from '@/components/Main/ProductList';
 
+const dataBC = {
+    titleCategory: 'Двери купе',
+    descriptionCategory: 'Ознакомьтесь с нашими вариантами дверей купе для ниш помещений и межкомнатных перегородок.',
+    pathImg: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg',
+    parentPageName: 'Шкафы',
+    parentPageLink: '/shkafy',
+    currentPageName: 'Двери',
+}
+
 const products = [
 	{
 		name: 'Санди',
@@ -56,8 +65,8 @@ export default () => {
                 <Head>
                     <title>Двери</title>
                 </Head>
-                <BreadCrumbs/>
-                <ProductList products={products}/>
+                <BreadCrumbs dataBC = {dataBC}/>
+                <ProductList products = {products}/>
             </MainLayout>
         </>
     )

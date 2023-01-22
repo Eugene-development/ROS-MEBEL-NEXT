@@ -2,7 +2,7 @@ import Link from "next/link";
 import { is_visible_form_measurement } from '@/apollo/stores/visible'
 
 
-export default function BreadCrumbs () {
+export default function BreadCrumbs (props) {
     return (
         <>
             <div className="bg-white">
@@ -13,7 +13,7 @@ export default function BreadCrumbs () {
                             <div className="max-w-full">
                                 <div className="relative shadow-xl sm:overflow-hidden">
                                     <div className="absolute inset-0">
-                                        <img className="h-full w-full object-cover" src='https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/mebel_dlya_garderobnoy_komnaty_syuzen.webp' alt="рубрика" />
+                                        <img className="h-full w-full object-cover" src={props.dataBC.pathImg} alt="рубрика" />
                                         <div className="absolute inset-0 bg-gray-800 mix-blend-multiply" />
                                     </div>
                                     <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 ">
@@ -56,7 +56,7 @@ export default function BreadCrumbs () {
                                                 </div>
                                             </div>
 
-                                            {false &&
+                                            {props.dataBC.parentPageName &&
                                                 <div className="flex">
                                                     <div className="flex items-center">
                                                         <svg
@@ -69,11 +69,11 @@ export default function BreadCrumbs () {
                                                         >
                                                             <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
                                                         </svg>
-                                                        <a
-                                                            href="/{BC.parentPageLink}"
+                                                        <Link
+                                                            href={props.dataBC.parentPageLink}
                                                             className="ml-4 text-sm font-medium text-gray-100 hover:text-gray-100"
-                                                            >ggg
-                                                        </a>
+                                                            >{props.dataBC.parentPageName}
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             }
@@ -92,18 +92,18 @@ export default function BreadCrumbs () {
                                                     </svg>
                                                     <span
                                                         className="ml-4 text-sm font-medium text-gray-100 hover:text-gray-100"
-                                                        aria-current="page">sssssssss</span
-                                                    >
+                                                        aria-current="page">{props.dataBC.currentPageName}
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                                            <span className="block text-white">pppppppp</span>
+                                            <span className="block text-white">{props.dataBC.titleCategory}</span>
                                         </h1>
 
                                         <p className="mx-auto mt-6 max-w-lg text-center text-xl text-gray-200 sm:max-w-3xl">
-                                            ooo
+                                            {props.dataBC.titleDescription}
                                         </p>
                                         <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                                             <div

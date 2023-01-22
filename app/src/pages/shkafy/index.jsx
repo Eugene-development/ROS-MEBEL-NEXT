@@ -3,6 +3,25 @@ import MainLayout from '@/components/Layouts/MainLayout';
 import BreadCrumbs from '@/components/Main/BreadCrumbs';
 import Category from '@/components/Main/Category'
 
+const dataBCttt = {
+    titleCategory: '',
+    descriptionCategory: '',
+    pathImg: '',
+    parentPageName: '',
+    parentPageLink: '',
+    currentPageName: '',
+}
+
+const dataBC = {
+    titleCategory: 'Шкафы',
+    descriptionCategory: 'Функциональные шкафы на заказ для вашей комнаты или гардероба. Множество форм и материалов. Дизайн проект в подарок. Звоните!',
+    pathImg: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg',
+    parentPageName: '',
+    parentPageLink: '',
+    currentPageName: 'Шкафы',
+}
+
+
 const types = [
 	{
 		name: 'Шкафы купе',
@@ -57,7 +76,7 @@ export default () => {
                     <title>Контакты</title>
                 </Head>
 
-                <BreadCrumbs/>
+                <BreadCrumbs dataBC = {dataBC}/>
                 <Category types = {types}/>
             </MainLayout>
         </>
