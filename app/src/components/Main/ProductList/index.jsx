@@ -4,12 +4,12 @@ export default function ProductList (prop) {
             <div id="models" className="bg-gray-100">
                 <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-16 ">
                     <div className="space-y-12">
-                        <div className="space-y-5 text-center sm:space-y-4">
+                        {/* <div className="space-y-5 text-center sm:space-y-4">
                             <h2 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                                {/* {content.mainText.titleCategory} */}HHH
+                                HHH
                             </h2>
                             <p className="text-xl  text-gray-900">LLLLLL</p>
-                        </div>
+                        </div> */}
                         <div className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-3 lg:gap-10">
                             {/* {#each content.products as { name, text, img, alt }}
                                 <div
