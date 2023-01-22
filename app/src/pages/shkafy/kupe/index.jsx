@@ -4,12 +4,12 @@ import BreadCrumbs from '@/components/Main/BreadCrumbs';
 import ProductList from '@/components/Main/ProductList';
 
 const dataBC = {
-    titleCategory: '',
-    descriptionCategory: '',
-    pathImg: '',
-    parentPageName: '',
-    parentPageLink: '',
-    currentPageName: '',
+    titleCategory: 'Шкафы купе',
+    descriptionCategory: 'Ознакомьтесь с нашими вариантами шкафов купе на заказ по доступным ценам. Предлагаем различные системы подвесных и нижнеопорных дверей.',
+    pathImg: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg',
+    parentPageName: 'Шкафы',
+    parentPageLink: '/shkafy',
+    currentPageName: 'Шкафы купе',
 }
 
 const products = [
