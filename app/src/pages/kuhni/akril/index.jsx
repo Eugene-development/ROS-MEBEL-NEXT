@@ -4,12 +4,12 @@ import BreadCrumbs from '@/components/Main/BreadCrumbs';
 import ProductList from '@/components/Main/ProductList';
 
 const dataBC = {
-    titleCategory: 'Кухонные гарнитуры',
+    titleCategory: 'Кухонные гарнитуры - Акрил',
     descriptionCategory: 'Недорогие кухонные гарнитуры на заказ под ваши размеры по доступным ценам. Дизайн проект в подарок. Ждём вас!',
     pathImg: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/kitchens/4.jpg',
-    parentPageName: '',
-    parentPageLink: '',
-    currentPageName: 'Кухонные гарнитуры',
+    parentPageName: 'Кухонные гарнитуры',
+    parentPageLink: '/kuhni',
+    currentPageName: 'Акрил',
 }
 
 const products = [

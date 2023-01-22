@@ -4,12 +4,12 @@ import BreadCrumbs from '@/components/Main/BreadCrumbs';
 import ProductList from '@/components/Main/ProductList';
 
 const dataBC = {
-    titleCategory: '',
-    descriptionCategory: '',
-    pathImg: '',
-    parentPageName: '',
-    parentPageLink: '',
-    currentPageName: '',
+    titleCategory: 'Кухонные гарнитуры - Патина',
+    descriptionCategory: 'Ознакомьтесь с нашими вариантами кухонных гарнитуров с классическими патинированными фасадами',
+    pathImg: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/kitchens/4.jpg',
+    parentPageName: 'Кухонные гарнитуры',
+    parentPageLink: '/kuhni',
+    currentPageName: 'Патина',
 }
 
 const products = [

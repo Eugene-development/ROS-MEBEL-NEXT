@@ -4,12 +4,12 @@ import BreadCrumbs from '@/components/Main/BreadCrumbs';
 import ProductList from '@/components/Main/ProductList';
 
 const dataBC = {
-    titleCategory: '',
-    descriptionCategory: '',
-    pathImg: '',
-    parentPageName: '',
-    parentPageLink: '',
-    currentPageName: '',
+    titleCategory: 'Кухонные гарнитуры - ЛДСП',
+    descriptionCategory: 'Ознакомьтесь с нашими вариантами кухонными гарнитурами эконом класса с фасадами из ЛДСП',
+    pathImg: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/kitchens/4.jpg',
+    parentPageName: 'Кухонные гарнитуры',
+    parentPageLink: '/kuhni',
+    currentPageName: 'ЛДСП',
 }
 
 const products = [
