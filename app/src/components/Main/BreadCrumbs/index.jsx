@@ -1,3 +1,7 @@
+import Link from "next/link";
+import { is_visible_form_measurement } from '@/apollo/stores/visible'
+
+
 export default function BreadCrumbs () {
     return (
         <>
@@ -16,7 +20,7 @@ export default function BreadCrumbs () {
                                         <div className="mx-auto pb-8 flex space-x-4 justify-center">
                                             <div className="flex">
                                                 <div className="flex items-center">
-                                                    <a href="/" className="text-gray-100 hover:text-gray-100">
+                                                    <Link href="/" className="text-gray-100 hover:text-gray-100">
                                                         <svg
                                                             className="flex-shrink-0 h-5 w-5"
                                                             xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +33,7 @@ export default function BreadCrumbs () {
                                                             />
                                                         </svg>
                                                         <span className="sr-only">Главная</span>
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
 
@@ -45,10 +49,10 @@ export default function BreadCrumbs () {
                                                     >
                                                         <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
                                                     </svg>
-                                                    <a
+                                                    <Link
                                                         href="/catalog"
-                                                        className="ml-4 text-sm font-medium text-gray-100 hover:text-gray-100">Каталог</a
-                                                    >
+                                                        className="ml-4 text-sm font-medium text-gray-100 hover:text-gray-100">Каталог
+                                                    </Link>
                                                 </div>
                                             </div>
 
@@ -103,19 +107,19 @@ export default function BreadCrumbs () {
                                         </p>
                                         <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                                             <div
-                                                className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0"
+                                                className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-1 sm:gap-5 sm:space-y-0"
                                             >
                                                 <button
-                                                    // on:click={() => visibleFormMeasurement.update(invert)}
+                                                    onClick={() => {is_visible_form_measurement(true)}}
                                                     type="button"
                                                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-green-400 px-4 py-3 text-base font-medium text-gray-100 shadow-sm sm:px-8 bg-opacity-30 hover:bg-opacity-20"
-                                                    >Записаться на замер</button
-                                                >
-                                                <a
+                                                    >Записаться на замер
+                                                </button>
+                                                {/* <Link
                                                     href="#models"
                                                     className="flex items-center justify-center rounded-md border border-transparent bg-gray-500 bg-opacity-60 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
-                                                    >Посмотреть варианты</a
-                                                >
+                                                    >Посмотреть варианты
+                                                </Link> */}
                                             </div>
                                         </div>
                                     </div>
