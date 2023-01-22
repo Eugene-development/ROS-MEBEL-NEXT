@@ -13,6 +13,12 @@ const dataBC = {
 }
 
 const products = [
+    	{
+		name: 'Чикаго',
+		text: '2900х2300х600/320',
+		img: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV4/kuhni/chikago.jpeg',
+		alt: 'Кухонный гарнитур'
+	},
 	{
 		name: 'Капучино',
 		text: '2800/1800х2300х600/320',

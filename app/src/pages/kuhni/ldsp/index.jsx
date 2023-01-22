@@ -14,12 +14,6 @@ const dataBC = {
 
 const products = [
 	{
-		name: 'Чикаго',
-		text: '2900х2300х600/320',
-		img: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV4/kuhni/chikago.jpeg',
-		alt: 'Кухонный гарнитур'
-	},
-	{
 		name: 'Дива',
 		text: '2800х2160х600/320',
 		img: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV4/kuhni/diva.jpeg',
