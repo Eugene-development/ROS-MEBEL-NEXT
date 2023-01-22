@@ -27,8 +27,8 @@ const info = [
 ]
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Установка и сборка мебели';
+    const description = 'Сборка и установка приобретённой вами мебели.';
 
     return (
         <>

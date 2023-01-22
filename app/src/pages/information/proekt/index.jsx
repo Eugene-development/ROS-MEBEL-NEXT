@@ -27,8 +27,8 @@ const info = [
 ]
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Проект';
+    const description = 'Составление мебельного проекта';
 
     return (
         <>

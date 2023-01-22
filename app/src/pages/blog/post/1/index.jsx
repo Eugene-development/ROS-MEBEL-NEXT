@@ -61,8 +61,8 @@ const textHTML = `
 `;
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Мебельный блог || Пост 1';
+    const description = 'Мебельный пост 1';
 
     return (
         <>

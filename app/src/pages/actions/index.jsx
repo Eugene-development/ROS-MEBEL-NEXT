@@ -3,8 +3,8 @@ import MainLayout from '@/components/Layouts/MainLayout';
 import Action from "@/components/Main/Action"
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Акции';
+    const description = 'Акции от нашей компании';
 
     return (
         <>

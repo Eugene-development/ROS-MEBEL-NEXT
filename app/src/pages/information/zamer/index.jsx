@@ -27,8 +27,8 @@ const info = [
 ]
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Замер мебели';
+    const description = 'Замер помещения для заказа мебели.';
 
     return (
         <>

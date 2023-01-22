@@ -58,8 +58,8 @@ const textHTML = `
 `;
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Мебельный блог || Пост 2';
+    const description = 'Мебельный пост 2';
 
     return (
         <>

@@ -3,9 +3,9 @@ import MainLayout from '@/components/Layouts/MainLayout';
 import Vacancy from "@/components/Main/Vacancy";
 
 export default () => {
-    const title = '';
-    const description = '';
-    
+    const title = 'Вакансии';
+    const description = 'Проверьте есть ли свободные вакансии у нашей компании.';
+
     return (
         <>
             <MainLayout>

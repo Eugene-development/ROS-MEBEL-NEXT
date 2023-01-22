@@ -4,8 +4,8 @@ import Contacts from "@/components/Main/Contacts";
 
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Контакты';
+    const description = 'На этой страницы указаны контактные данные с нами.';
 
     return (
         <>

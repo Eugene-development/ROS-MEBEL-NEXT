@@ -27,9 +27,9 @@ const info = [
 ]
 
 export default () => {
-    const title = '';
-    const description = '';
-    
+    const title = 'Гарантии';
+    const description = 'Гарантии на мебель';
+
     return (
         <>
             <MainLayout>

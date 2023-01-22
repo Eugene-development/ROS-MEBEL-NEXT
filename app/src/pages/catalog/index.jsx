@@ -4,8 +4,8 @@ import Catalog from "@/components/Main/Catalog";
 
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Мебельный каталог';
+    const description = 'Посмотрите наш мебельный каталог с различными вариантами продукции.';
 
     return (
         <>

@@ -3,8 +3,8 @@ import MainLayout from '@/components/Layouts/MainLayout';
 import Blog from '@/components/Main/Blog';
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Мебельный блог || Тематические статьи';
+    const description = 'Ознакомьтесь с нашими тематическими статьями на мебельную тематику.';
 
     return (
         <>
