@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import MainLayout from '@/components/Layouts/MainLayout';
+import BreadCrumbs from '@/components/Main/BreadCrumbs';
 import Category from '@/components/Main/Category'
 
 const types = [
@@ -56,6 +57,7 @@ export default () => {
                     <title>Контакты</title>
                 </Head>
 
+                <BreadCrumbs/>
                 <Category types = {types}/>
             </MainLayout>
         </>
