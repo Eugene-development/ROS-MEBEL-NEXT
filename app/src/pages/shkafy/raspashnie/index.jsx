@@ -3,6 +3,15 @@ import MainLayout from '@/components/Layouts/MainLayout';
 import BreadCrumbs from '@/components/Main/BreadCrumbs';
 import ProductList from '@/components/Main/ProductList';
 
+const dataBC = {
+    titleCategory: '',
+    descriptionCategory: '',
+    pathImg: '',
+    parentPageName: '',
+    parentPageLink: '',
+    currentPageName: '',
+}
+
 const products = [
 	{
 		name: 'Чароит',

@@ -3,15 +3,6 @@ import MainLayout from '@/components/Layouts/MainLayout';
 import BreadCrumbs from '@/components/Main/BreadCrumbs';
 import Category from '@/components/Main/Category'
 
-// const dataBCttt = {
-//     titleCategory: '',
-//     descriptionCategory: '',
-//     pathImg: '',
-//     parentPageName: '',
-//     parentPageLink: '',
-//     currentPageName: '',
-// }
-
 const dataBC = {
     titleCategory: 'Шкафы',
     descriptionCategory: 'Функциональные шкафы на заказ для вашей комнаты или гардероба. Множество форм и материалов. Дизайн проект в подарок. Звоните!',
@@ -20,7 +11,6 @@ const dataBC = {
     parentPageLink: '',
     currentPageName: 'Шкафы',
 }
-
 
 const types = [
 	{
