@@ -43,7 +43,7 @@ export default () => {
                 <Head>
                     <title>Пластик</title>
                 </Head>
-                <BreadCrumbs/>
+                <BreadCrumbs dataBC = {dataBC}/>
                 <ProductList products={products}/>
             </MainLayout>
         </>

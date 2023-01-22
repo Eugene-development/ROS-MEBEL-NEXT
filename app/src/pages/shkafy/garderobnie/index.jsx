@@ -12,7 +12,7 @@ export default () => {
                 <Head>
                     <title></title>
                 </Head>
-                <BreadCrumbs/>
+                <BreadCrumbs dataBC = {dataBC}/>
                 <ProductList products={products}/>
             </MainLayout>
         </>

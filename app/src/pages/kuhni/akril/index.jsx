@@ -3,6 +3,15 @@ import MainLayout from '@/components/Layouts/MainLayout';
 import BreadCrumbs from '@/components/Main/BreadCrumbs';
 import ProductList from '@/components/Main/ProductList';
 
+const dataBC = {
+    titleCategory: 'Кухонные гарнитуры',
+    descriptionCategory: 'Недорогие кухонные гарнитуры на заказ под ваши размеры по доступным ценам. Дизайн проект в подарок. Ждём вас!',
+    pathImg: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/kitchens/4.jpg',
+    parentPageName: '',
+    parentPageLink: '',
+    currentPageName: 'Кухонные гарнитуры',
+}
+
 const products = [
 	{
 		name: 'Скарлет',
@@ -31,7 +40,7 @@ export default () => {
                 <Head>
                     <title>Акрил</title>
                 </Head>
-                <BreadCrumbs/>
+                <BreadCrumbs dataBC = {dataBC}/>
                 <ProductList products={products}/>
             </MainLayout>
         </>

@@ -73,7 +73,7 @@ export default () => {
                 <Head>
                     <title>МДФ</title>
                 </Head>
-                <BreadCrumbs/>
+                <BreadCrumbs dataBC = {dataBC}/>
                 <ProductList products={products}/>
             </MainLayout>
         </>

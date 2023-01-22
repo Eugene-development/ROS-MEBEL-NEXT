@@ -31,7 +31,7 @@ export default () => {
                 <Head>
                     <title>Патина</title>
                 </Head>
-                <BreadCrumbs/>
+                <BreadCrumbs dataBC = {dataBC}/>
                 <ProductList products={products}/>
             </MainLayout>
         </>

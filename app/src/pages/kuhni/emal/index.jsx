@@ -25,7 +25,7 @@ export default () => {
                 <Head>
                     <title>Эмаль</title>
                 </Head>
-                <BreadCrumbs/>
+                <BreadCrumbs dataBC = {dataBC}/>
                 <ProductList products={products}/>
             </MainLayout>
         </>

@@ -1,6 +1,16 @@
 import Head from 'next/head'
 import MainLayout from '@/components/Layouts/MainLayout';
+import BreadCrumbs from '@/components/Main/BreadCrumbs';
 import Category from '@/components/Main/Category'
+
+const dataBC = {
+    titleCategory: 'Кухонные гарнитуры',
+    descriptionCategory: 'Недорогие кухонные гарнитуры на заказ под ваши размеры по доступным ценам. Дизайн проект в подарок. Ждём вас!',
+    pathImg: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/kitchens/4.jpg',
+    parentPageName: '',
+    parentPageLink: '',
+    currentPageName: 'Кухонные гарнитуры',
+}
 
 const types = [
 	{
@@ -55,6 +65,7 @@ export default () => {
                     <title>Контакты</title>
                 </Head>
 
+                <BreadCrumbs dataBC = {dataBC}/>
                 <Category types = {types}/>
             </MainLayout>
         </>
