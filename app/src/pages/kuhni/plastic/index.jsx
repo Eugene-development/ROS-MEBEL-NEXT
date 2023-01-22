@@ -46,12 +46,17 @@ const products = [
 ];
 
 export default () => {
+    const title = '';
+    const description = '';
+
     return (
         <>
             <MainLayout>
                 <Head>
-                    <title>Пластик</title>
+                    <title>{title}</title>
+                    <meta name="description" content={description} />
                 </Head>
+
                 <BreadCrumbs dataBC = {dataBC}/>
                 <ProductList products={products}/>
             </MainLayout>

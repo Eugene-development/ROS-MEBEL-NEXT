@@ -27,11 +27,15 @@ const info = [
 ]
 
 export default () => {
+    const title = '';
+    const description = '';
+    
     return (
         <>
             <MainLayout>
                 <Head>
-                    <title>{process.env.NEXT_PUBLIC_COMPANY} | Гарантии</title>
+                    <title>{title}</title>
+                    <meta name="description" content={description} />
                 </Head>
 
                 <Information heading={heading} info={info} />

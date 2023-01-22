@@ -3,6 +3,8 @@ import MainLayout from '@/components/Layouts/MainLayout';
 import BreadCrumbs from '@/components/Main/BreadCrumbs';
 import Category from '@/components/Main/Category'
 
+
+
 const dataBC = {
     titleCategory: 'Шкафы',
     descriptionCategory: 'Функциональные шкафы на заказ для вашей комнаты или гардероба. Множество форм и материалов. Дизайн проект в подарок. Звоните!',
@@ -59,11 +61,15 @@ const types = [
 ];
 
 export default () => {
+    const title = 'Шкафы на заказ в Нижнем Новгороде';
+    const description = 'Обратите внимание на шкафы на заказ, предлагаемые нашей компанией.';
+
     return (
         <>
             <MainLayout>
                 <Head>
-                    <title>Контакты</title>
+                    <title>{title}</title>
+                    <meta name="description" content={description} />
                 </Head>
 
                 <BreadCrumbs dataBC = {dataBC}/>

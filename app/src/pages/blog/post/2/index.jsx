@@ -58,11 +58,15 @@ const textHTML = `
 `;
 
 export default () => {
+    const title = '';
+    const description = '';
+
     return (
         <>
             <MainLayout>
                 <Head>
-                    <title>Пост</title>
+                    <title>{title}</title>
+                    <meta name="description" content={description} />
                 </Head>
 
                 <Post text={textHTML}/>

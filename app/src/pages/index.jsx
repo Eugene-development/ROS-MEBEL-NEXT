@@ -6,19 +6,22 @@ import PrimaryFeatures from '@/components/Main/PrimaryFeatures';
 import Testimonials from '@/components/Main/Testimonials';
 import Service from '@/components/Main/Service';
 
+
 export default () => {
+    const title = 'Азбука Комфорта | Мебель на заказ в Нижнем Новгороде';
+    const description = 'Наша компания предлагает приобрести мебель на заказ по доступным ценам.'
+
     return (
         <>
             <MainLayout>
                 <Head>
-                    <title>{process.env.NEXT_PUBLIC_COMPANY} | Мебель на заказ</title>
-                    <meta name="description" content="This is a sample tag description for SEO." />
+                    <title>{title}</title>
+                    <meta name="description" content={description} />
                 </Head>
 
                 <Hero/>
                 <Brand/>
                 <PrimaryFeatures/>
-                {/* <Service/> */}
                 <Service/>
                 <Testimonials/>
             </MainLayout>
