@@ -10,7 +10,7 @@ export default function BreadCrumbs () {
                                 <div className="relative shadow-xl sm:overflow-hidden">
                                     <div className="absolute inset-0">
                                         <img className="h-full w-full object-cover" src='https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/mebel_dlya_garderobnoy_komnaty_syuzen.webp' alt="рубрика" />
-                                        <div className="absolute inset-0 bg-slate-700 mix-blend-multiply" />
+                                        <div className="absolute inset-0 bg-gray-800 mix-blend-multiply" />
                                     </div>
                                     <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 ">
                                         <div className="mx-auto pb-8 flex space-x-4 justify-center">

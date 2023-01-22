@@ -45,7 +45,7 @@ export default function Category(props) {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Категории шкафов</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Категории шкафов222</h2>
         <p className="mt-4 text-base text-gray-500">
           Выберите подходящую под ваши нужды категорию шкафов. Комплектацию, цвет и размер вы можете поменять.
         </p>
@@ -55,12 +55,12 @@ export default function Category(props) {
             <Link key={i} href={category.href} className="mb-16 group block transition ease-in-out hover:scale-105">
               <div
                 aria-hidden="true"
-                className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg group-hover:opacity-75 lg:aspect-w-5 lg:aspect-h-6"
+                className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg group-hover:opacity-75 lg:aspect-w-5 lg:aspect-h-4 shadow-lg"
               >
                 <img
                   src={category.imageSrc}
                   alt={category.imageAlt}
-                  className="h-80 w-full object-cover object-center"
+                  className="w-full object-cover object-center"
                 />
               </div>
               <h3 className="mt-4 text-base font-semibold text-gray-900">{category.name}</h3>

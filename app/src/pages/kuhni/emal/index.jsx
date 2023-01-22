@@ -5,21 +5,15 @@ import ProductList from '@/components/Main/ProductList';
 
 const products = [
 	{
-		name: 'Скарлет',
-		text: '2300х2160х600/320',
-		img: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV4/kuhni/scarlet.jpeg',
+		name: 'Капучино',
+		text: '2800/1800х2300х600/320',
+		img: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV4/kuhni/kapuchino.jpeg',
 		alt: 'Кухонный гарнитур'
 	},
 	{
-		name: 'Астра',
-		text: '2600х2150х600/320',
-		img: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV4/kuhni/astra.jpeg',
-		alt: 'Кухонный гарнитур'
-	},
-	{
-		name: 'Рианна',
-		text: '2200/2600х2200х600/320',
-		img: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV4/kuhni/riana.jpeg',
+		name: 'Прага',
+		text: '2000/3000х2160х600/320',
+		img: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV4/kuhni/praga.jpeg',
 		alt: 'Кухонный гарнитур'
 	}
 ];
@@ -29,7 +23,7 @@ export default () => {
         <>
             <MainLayout>
                 <Head>
-                    <title>Акрил</title>
+                    <title>Эмаль</title>
                 </Head>
                 <BreadCrumbs/>
                 <ProductList products={products}/>
