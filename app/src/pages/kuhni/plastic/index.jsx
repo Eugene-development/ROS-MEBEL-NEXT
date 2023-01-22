@@ -46,8 +46,8 @@ const products = [
 ];
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Кухонные гарнитуры с фасадами из пластика';
+    const description = 'Варианты кухонных гарнитуров с фасадами из пластика в Нижнем Новгороде.';
 
     return (
         <>

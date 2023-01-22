@@ -15,8 +15,8 @@ const dataBC = {
 const products = [];
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Купить мебель в гардеробную на заказ в Нижнем Новгороде';
+    const description = 'Посмотрите варианты гардеробных комнат с мебелью для ниш в комнатах.';
 
     return (
         <>

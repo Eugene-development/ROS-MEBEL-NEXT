@@ -58,8 +58,8 @@ const products = [
 ];
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Купить двери купе на заказ в Нижнем Новгороде';
+    const description = 'Варианты дверей купе для ниш помещений. Разнообразие материалов и цветов.';
 
     return (
         <>

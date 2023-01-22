@@ -52,9 +52,9 @@ const products = [
 ];
 
 export default () => {
-    const title = '';
-    const description = '';
-    
+    const title = 'Кухонные гарнитуры с фасадами из ЛДСП';
+    const description = 'Варианты кухонными гарнитурами с фасадами из ЛДСП в Нижнем Новгороде.';
+
     return (
         <>
             <MainLayout>

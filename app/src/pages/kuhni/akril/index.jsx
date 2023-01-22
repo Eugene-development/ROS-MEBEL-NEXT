@@ -34,8 +34,8 @@ const products = [
 ];
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Акриловые кухонные гарнитуры';
+    const description = 'Варианты кухонных гарнитуров с акриловыми фасадами в Нижнем Новгороде.';
 
     return (
         <>

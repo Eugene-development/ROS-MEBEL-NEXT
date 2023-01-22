@@ -76,8 +76,8 @@ const products = [
 ];
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Купить встроенный шкаф на заказ в Нижнем Новгороде';
+    const description = 'Варианты встроенных шкафов для ниш помещений в вашей квартире.';
 
     return (
         <>

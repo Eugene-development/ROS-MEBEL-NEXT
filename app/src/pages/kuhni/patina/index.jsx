@@ -34,8 +34,8 @@ const products = [
 ];
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Кухонные гарнитуры c патинированными фасадами';
+    const description = 'Ознакомьтесь с нашими вариантами кухонных гарнитуров с классическими патинированными фасадами.';
 
     return (
         <>

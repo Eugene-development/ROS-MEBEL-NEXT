@@ -34,8 +34,8 @@ const products = [
 ];
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Эмалированные кухонные гарнитуры';
+    const description = 'Варианты эмалированных кухонных гарнитуров в Нижнем Новгороде.';
 
     return (
         <>

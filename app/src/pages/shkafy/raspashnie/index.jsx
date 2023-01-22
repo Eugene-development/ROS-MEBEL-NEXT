@@ -58,8 +58,8 @@ const products = [
 ];
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Купить распашные шкафы на заказ в Нижнем Новгороде';
+    const description = 'Варианты распашных шкафов различного назначения для домов и квартир.';
 
     return (
         <>

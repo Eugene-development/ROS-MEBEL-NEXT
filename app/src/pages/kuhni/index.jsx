@@ -58,8 +58,8 @@ const types = [
 ];
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Кухонные гарнитуры на заказ в Нижнем Новгороде';
+    const description = 'Обратите внимание на кухонные гарнитуры на заказ, предлагаемые нашей компанией.';
 
     return (
         <>

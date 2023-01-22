@@ -15,8 +15,8 @@ const dataBC = {
 const products = [];
 
 export default () => {
-    const title = '';
-    const description = '';
+    const title = 'Купить офисный шкаф на заказ в Нижнем Новгороде';
+    const description = 'Варианты офисных шкафов для вашей комфортной работы.';
 
     return (
         <>
