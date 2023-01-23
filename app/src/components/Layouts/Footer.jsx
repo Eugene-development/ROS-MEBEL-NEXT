@@ -11,19 +11,19 @@ const phoneService = '+7 (930) 671-14-55';
 const menu = [
 	{
 		value: 'Главная',
-		path: '/'
+		path: ''
 	},
 	{
 		value: 'Шкафы',
-		path: '/shkafy'
+		path: 'shkafy'
 	},
 	{
 		value: 'Кухни',
-		path: '/kuhni'
+		path: 'kuhni'
 	},
 	{
 		value: 'Блог',
-		path: '/blog'
+		path: 'blog'
 	},
 ];
 
@@ -36,7 +36,7 @@ const Footer = () => {
                 <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
                     {menu && menu.map((item, i) => (
                         <div key={i} className="px-4 py-2">
-                            <Link href={item.path} className="text-xs sm:text-base text-gray-600"> {item.value} </Link>
+                            <Link href={`/${item.path}`} className="text-xs sm:text-base text-gray-600"> {item.value} </Link>
                         </div>
                         ))
                     }
