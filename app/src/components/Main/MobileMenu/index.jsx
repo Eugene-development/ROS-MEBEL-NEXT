@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -51,24 +52,24 @@ const resources = [
   {
     name: 'Замер',
     description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
+    href: '/information/zamer',
     icon: LifebuoyIcon,
   },
   {
     name: 'Проект',
     description: 'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
+    href: '/information/proekt',
     icon: BookmarkSquareIcon,
   },
   {
     name: 'Доставка',
     description: 'See what meet-ups and other events we might be planning near you.',
-    href: '#',
+    href: '/information/dostavka',
     icon: CalendarIcon,
   },
-  { name: 'Сборка', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
-  { name: 'Оплата', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
-  { name: 'Гарантии', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
+  { name: 'Сборка', description: 'Understand how we take your privacy seriously.', href: '/information/ustanovka', icon: ShieldCheckIcon },
+  { name: 'Оплата', description: 'Understand how we take your privacy seriously.', href: '/information/oplata', icon: ShieldCheckIcon },
+  { name: 'Гарантии', description: 'Understand how we take your privacy seriously.', href: '/information/garantii', icon: ShieldCheckIcon },
 ]
 const recentPosts = [
   { id: 1, name: 'Boost your conversion rate', href: '#' },
