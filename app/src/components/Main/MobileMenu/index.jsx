@@ -266,7 +266,7 @@ export default function MobileMenu() {
                             className="flex rounded-lg px-3 py-1.5 text-xl font-semibold leading-6 text-gray-900 shadow-sm ring-2 ring-gray-50/10 hover:ring-gray-500/20"
                         >
                             <PhoneIcon className="block h-6 w-6" aria-hidden="true" />
-                            <Link href="tel:79801506943" className="ml-2 text-gray-700 text-xs sm:text-lg font-bold "
+                            <Link href="tel:79801506943" className="ml-2 text-gray-700 text-lg font-bold "
                                 >8 (980) 150-69-43
                             </Link>
                         </div>
