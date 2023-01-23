@@ -8,7 +8,6 @@ const MainLayout = ({ children }) => {
 
     return (
         <div className="min-h-screen">
-            <MobileMenu/>
 
             <Banner/>
             <Header/>
