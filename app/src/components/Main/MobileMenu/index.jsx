@@ -17,36 +17,27 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
-const features = [
+const menu = [
   {
-    name: 'Analytics',
-    href: '#',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    icon: ChartBarIcon,
+    name: 'Главная',
+    href: '/',
+    icon: LifebuoyIcon,
   },
   {
-    name: 'Engagement',
-    href: '#',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    icon: CursorArrowRaysIcon,
-  },
-  { name: 'Security', href: '#', description: "Your customers' data will be safe and secure.", icon: ShieldCheckIcon },
-  {
-    name: 'Integrations',
-    href: '#',
-    description: "Connect with third-party tools that you're already using.",
-    icon: Squares2X2Icon,
+    name: 'Каталог',
+    href: '/catalog',
+    icon: LifebuoyIcon,
   },
   {
-    name: 'Automations',
-    href: '#',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    icon: ArrowPathIcon,
+    name: 'Блог',
+    href: '/blog',
+    icon: LifebuoyIcon,
   },
-]
-const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
+  {
+    name: 'Вакансии',
+    href: '/vacancy',
+    icon: LifebuoyIcon,
+  },
 ]
 const resources = [
   {
@@ -236,7 +227,7 @@ export default function MobileMenu() {
                 </div>
                 <div className="mt-6">
                   <nav className="grid gap-y-8">
-                    {resources.map((item) => (
+                    {menu.map((item) => (
                       <Link
                         key={item.name}
                         href={item.href}
