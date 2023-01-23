@@ -70,6 +70,7 @@ const resources = [
   { name: 'Сборка', description: 'Общая информация по сборке и установке', href: '/information/ustanovka', icon: ShieldCheckIcon },
   { name: 'Оплата', description: 'Правила оплаты заказанной мебели', href: '/information/oplata', icon: ShieldCheckIcon },
   { name: 'Гарантии', description: 'Предоставляемые гарантии на всю продукцию', href: '/information/garantii', icon: ShieldCheckIcon },
+  { name: 'Контакты', description: 'Связь с нашими сотрудниками', href: '/contacts', icon: ShieldCheckIcon },
 ]
 const recentPosts = [
   { id: 1, name: 'Boost your conversion rate', href: '#' },
@@ -116,6 +117,9 @@ export default function MobileMenu() {
               </Link>
               <Link href="/blog" className="text-base font-medium text-gray-50 hover:text-gray-100">
                 Блог
+              </Link>
+              <Link href="/vacancy" className="text-base font-medium text-gray-50 hover:text-gray-100">
+                Вакансии
               </Link>
 
               <Popover className="relative">
@@ -221,9 +225,9 @@ export default function MobileMenu() {
                 <div className="flex items-center justify-between">
                   <div>
                     <img
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
-                      alt="Your Company"
+                      className="h-10 w-auto"
+                      src="https://storage.yandexcloud.net/brand-logo/azbuka-komforta/logo/logo4.png"
+                      alt="logo"
                     />
                   </div>
                   <div className="-mr-2">
@@ -235,13 +239,13 @@ export default function MobileMenu() {
                 </div>
                 <div className="mt-6">
                   <nav className="grid gap-y-8">
-                    {features.map((item) => (
+                    {resources.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                       >
-                        <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
+                        <item.icon className="h-6 w-6 flex-shrink-0 text-blue-500" aria-hidden="true" />
                         <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
                       </a>
                     ))}
@@ -250,13 +254,6 @@ export default function MobileMenu() {
               </div>
               <div className="space-y-6 py-6 px-5">
                 <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                  <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                    Pricing
-                  </a>
-
-                  <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                    Docs
-                  </a>
                   {resources.map((item) => (
                     <a
                       key={item.name}
@@ -267,20 +264,16 @@ export default function MobileMenu() {
                     </a>
                   ))}
                 </div>
-                <div>
-                  <a
-                    href="#"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700"
-                  >
-                    Sign up
-                  </a>
-                  <p className="mt-6 text-center text-base font-medium text-gray-500">
-                    Existing customer?
-                    <a href="#" className="text-blue-600 hover:text-blue-500">
-                      Sign in
-                    </a>
-                  </p>
-                </div>
+                    <div className="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
+                        <div
+                            className="flex rounded-lg px-3 py-1.5 text-xl font-semibold leading-6 text-gray-900 shadow-sm ring-2 ring-gray-50/10 hover:ring-gray-500/20"
+                        >
+                            <PhoneIcon className="block h-6 w-6" aria-hidden="true" />
+                            <Link href="tel:79801506943" className="ml-2 text-gray-700 text-xs sm:text-lg font-bold "
+                                >8 (980) 150-69-43
+                            </Link>
+                        </div>
+                    </div>
               </div>
             </div>
           </Popover.Panel>
