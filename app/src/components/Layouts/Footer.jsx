@@ -11,19 +11,19 @@ const phoneService = '+7 (930) 671-14-55';
 const menu = [
 	{
 		value: 'Главная',
-		path: ''
+		path: '/'
 	},
 	{
 		value: 'Шкафы',
-		path: 'shkafy'
+		path: '/shkafy'
 	},
 	{
 		value: 'Кухни',
-		path: 'kuhni'
+		path: '/kuhni'
 	},
 	{
 		value: 'Блог',
-		path: 'blog'
+		path: '/blog'
 	},
 ];
 
