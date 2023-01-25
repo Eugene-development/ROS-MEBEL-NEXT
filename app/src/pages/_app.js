@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css'
+import '../global.css'
 import { ApolloProvider } from '@apollo/client'
 import client from '@/apollo/client'
 
