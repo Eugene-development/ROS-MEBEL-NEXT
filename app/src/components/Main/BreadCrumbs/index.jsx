@@ -138,7 +138,7 @@ export default function BreadCrumbs (props) {
                                         >
                                             <div className="group">
                                                 <span
-                                                    className="absolute top-0 left-0 h-full w-1 bg-transparent group-hover:bg-gray-200 lg:bottom-0 lg:top-auto lg:h-1 lg:w-full"
+                                                    className="absolute top-0 left-0 h-full w-1 bg-transparent group-hover:bg-green-600 lg:bottom-0 lg:top-auto lg:h-1 lg:w-full"
                                                     aria-hidden="true"
                                                 />
                                                 <span className="px-6 py-5 flex items-start text-sm font-medium">
@@ -150,7 +150,7 @@ export default function BreadCrumbs (props) {
                                                         </span>
                                                     </span>
                                                     <span className="mt-0.5 ml-4 flex min-w-0 flex-col">
-                                                        <span className="text-lg font-medium text-green-600">Заявка</span>
+                                                        <span className="text-lg font-medium text-gray-700 group-hover:text-green-600">Заявка</span>
                                                         <span className="text-sm font-medium text-gray-500"
                                                             >Оформите заявку на бесплатный замер на сайте или по телефону</span
                                                         >
@@ -160,11 +160,14 @@ export default function BreadCrumbs (props) {
                                         </div>
                                     </li>
 
+
                                     <li className="relative overflow-hidden lg:flex-1">
-                                        <div className="border border-gray-200 overflow-hidden lg:border-0">
-                                            <div aria-current="step">
+                                        <div
+                                            className="border border-gray-200 overflow-hidden border-t-0 rounded-b-md lg:border-0"
+                                        >
+                                            <div className="group">
                                                 <span
-                                                    className="absolute top-0 left-0 h-full w-1 bg-green-600 lg:bottom-0 lg:top-auto lg:h-1 lg:w-full"
+                                                    className="absolute top-0 left-0 h-full w-1 bg-transparent group-hover:bg-green-600 lg:bottom-0 lg:top-auto lg:h-1 lg:w-full"
                                                     aria-hidden="true"
                                                 />
                                                 <span className="px-6 py-5 flex items-start text-sm font-medium lg:pl-9">
@@ -176,7 +179,7 @@ export default function BreadCrumbs (props) {
                                                         </span>
                                                     </span>
                                                     <span className="mt-0.5 ml-4 flex min-w-0 flex-col">
-                                                        <span className="text-lg font-medium text-green-600">Замер</span>
+                                                        <span className="text-lg font-medium text-gray-700 group-hover:text-green-600">Замер</span>
                                                         <span className="text-sm font-medium text-gray-500"
                                                             >Получите полную консультацию с учётом размеров помещения</span
                                                         >
@@ -200,14 +203,13 @@ export default function BreadCrumbs (props) {
                                             </div>
                                         </div>
                                     </li>
-
                                     <li className="relative overflow-hidden lg:flex-1">
                                         <div
                                             className="border border-gray-200 overflow-hidden border-t-0 rounded-b-md lg:border-0"
                                         >
                                             <div className="group">
                                                 <span
-                                                    className="absolute top-0 left-0 h-full w-1 bg-transparent group-hover:bg-gray-200 lg:bottom-0 lg:top-auto lg:h-1 lg:w-full"
+                                                    className="absolute top-0 left-0 h-full w-1 bg-transparent group-hover:bg-green-600 lg:bottom-0 lg:top-auto lg:h-1 lg:w-full"
                                                     aria-hidden="true"
                                                 />
                                                 <span className="px-6 py-5 flex items-start text-sm font-medium lg:pl-9">
@@ -219,7 +221,7 @@ export default function BreadCrumbs (props) {
                                                         </span>
                                                     </span>
                                                     <span className="mt-0.5 ml-4 flex min-w-0 flex-col">
-                                                        <span className="text-lg font-medium text-green-600">Договор</span>
+                                                        <span className="text-lg font-medium text-gray-700 group-hover:text-green-600">Договор</span>
                                                         <span className="text-sm font-medium text-gray-500"
                                                             >Оформите договор на поставку мебели в офисе или у вас дома</span
                                                         >
