@@ -14,6 +14,10 @@ const dataBC = {
     currentPageName: 'Шкафы',
 }
 
+const info = {
+    titlePage: 'Категории шкафов',
+    descriptionPage: 'Выберите подходящую под ваши нужды категорию шкафов. Комплектацию, цвет и размер вы можете поменять.'
+}
 const types = [
 	{
 		name: 'Шкафы купе',
@@ -72,8 +76,8 @@ export default () => {
                     <meta name="description" content={description} />
                 </Head>
 
-                <BreadCrumbs dataBC = {dataBC}/>
-                <Category types = {types}/>
+                <BreadCrumbs dataBC = { dataBC }/>
+                <Category info = { info } types = {types}/>
             </MainLayout>
         </>
     )

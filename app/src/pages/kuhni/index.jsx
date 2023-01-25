@@ -12,6 +12,10 @@ const dataBC = {
     currentPageName: 'Кухонные гарнитуры',
 }
 
+const info = {
+    titlePage: 'Категории кухонных гарнитуров',
+    descriptionPage: 'Выберите подходящую под ваши пожелания и бюджет категорию кухонного гарнитура. Комплектацию, цвет и размер вы можете поменять.'
+}
 const types = [
 	{
 		name: 'МДФ',
@@ -70,7 +74,7 @@ export default () => {
                 </Head>
 
                 <BreadCrumbs dataBC = {dataBC}/>
-                <Category types = {types}/>
+                <Category info = { info } types = {types}/>
             </MainLayout>
         </>
     )

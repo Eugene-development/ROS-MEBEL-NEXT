@@ -45,9 +45,9 @@ export default function Category(props) {
   return (
     <div id="models" className="bg-white">
       <div className="mx-auto max-w-xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Категории шкафов28678668</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900">{props.info.titlePage}</h2>
         <p className="mt-4 text-base text-gray-500">
-          Выберите подходящую под ваши нужды категорию шкафов. Комплектацию, цвет и размер вы можете поменять.
+          {props.info.descriptionPage}
         </p>
 
         <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
