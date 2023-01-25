@@ -7,6 +7,7 @@ import MobileMenu from '../Main/MobileMenu';
 const MainLayout = ({ children }) => {
 
     return (
+        <>
         <div className="min-h-screen">
 
             <Banner/>
@@ -15,6 +16,21 @@ const MainLayout = ({ children }) => {
             <Footer/>
             <FormMeasurement/>
         </div>
+        {/* <style jsx>
+            {
+                `
+                 scroll {
+                        overflow-y: scroll;
+                        scroll-behavior: smooth;
+                    }
+                `
+
+
+            }
+
+        </style> */}
+
+        </>
     )
 }
 

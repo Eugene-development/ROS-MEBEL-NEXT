@@ -115,14 +115,14 @@ export default function MobileMenu() {
                   <>
                     <Popover.Button
                       className={classNames(
-                        open ? 'text-gray-50' : 'text-gray-50',
+                        open ? 'text-gray-50 ' : 'text-gray-50',
                         'px-2 group inline-flex items-center rounded-md bg-gray-900 text-base font-medium hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
                       )}
                     >
                       <span>Информация</span>
                       <ChevronDownIcon
                         className={classNames(
-                          open ? 'text-gray-600' : 'text-gray-400',
+                          open ? 'text-gray-200' : 'text-gray-100 -rotate-90',
                           'ml-2 h-5 w-5 group-hover:text-gray-500'
                         )}
                         aria-hidden="true"
@@ -140,7 +140,7 @@ export default function MobileMenu() {
                     >
                       <Popover.Panel className="absolute left-1/2 z-30 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0 ">
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                          <div className="relative grid gap-5 bg-gray-100 px-5 py-6 sm:gap-5 sm:p-8">
+                          <div className="relative grid gap-5 bg-slate-100 px-5 py-6 sm:gap-5 sm:p-8">
                             {resources.map((item) => (
                               <Link
                                 key={item.name}
