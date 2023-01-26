@@ -67,7 +67,7 @@ const types = [
 const text = `
     <div class="relative overflow-hidden bg-white py-16">
       <div class="relative px-6 lg:px-8">
-        <div class="mx-auto max-w-7xl text-lg">
+        <div class="mx-auto max-w-2xl text-lg">
           <h2>
             <span class="block text-center text-lg font-semibold text-green-600">Информация</span>
             <span class="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
@@ -75,7 +75,7 @@ const text = `
             </span>
           </h2>
         </div>
-        <div class="max-w-7xl prose prose-lg prose-indigo mx-auto mt-6 text-gray-500">
+        <div class="max-w-6xl prose prose-lg prose-indigo mx-auto mt-6 text-gray-500">
           <p>
             Комната - это место, где мы отдыхаем и обитаем. И как ни странно, но именно шкаф - один из главных элементов в ней. Он не только организует пространство, но и служит для хранения одежды, обуви, прочих предметов. Если вы житель Нижнего Новгорода и планируете купить шкаф для своей комнаты, то эта статья для вас.
           </p>
