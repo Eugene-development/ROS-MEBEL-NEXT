@@ -33,6 +33,20 @@ const tiers = [
         'ЛДСП',
     ],
   },
+  {
+    id: 'tier-team',
+    name: 'Категория',
+    href: 'kuhni',
+    category: 'Детская мебель',
+    description: 'Раздел в разработке Раздел в разработке Раздел в разработке Раздел в разработке',
+    features: [
+        'Раздел в разработке',
+        'Раздел в разработке',
+        'Раздел в разработке',
+        'Раздел в разработке',
+        'Раздел в разработке',
+    ],
+  },
 ]
 
 export default function Catalog() {
@@ -63,7 +77,7 @@ export default function Catalog() {
       <div className="flow-root bg-white pb-32 lg:pb-40">
         <div className="relative -mt-80">
           <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2 lg:gap-8">
+            <div className="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-7xl lg:grid-cols-3 lg:gap-8">
               {tiers.map((tier, i) => (
                 <div key={i} className="flex flex-col rounded-3xl bg-white shadow-xl ring-1 ring-black/10">
                   <div className="p-8 sm:p-10">
@@ -104,7 +118,7 @@ export default function Catalog() {
           </div>
         </div>
         <div className="relative mx-auto mt-8 max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-md lg:max-w-4xl">
+          <div className="mx-auto max-w-md lg:max-w-7xl">
             <div className="flex flex-col gap-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 lg:flex-row lg:items-center lg:gap-8">
               <div className="lg:min-w-0 lg:flex-1">
                 <h3 className="text-lg font-semibold leading-8 tracking-tight text-red-900">Акция</h3>

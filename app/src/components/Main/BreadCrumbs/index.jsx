@@ -197,7 +197,7 @@ export default function BreadCrumbs (props) {
                                                     <path
                                                         d="M0.5 0V31L10.5 41L0.5 51V82"
                                                         stroke="currentcolor"
-                                                        vector-effect="non-scaling-stroke"
+                                                        vectorEffect="non-scaling-stroke"
                                                     />
                                                 </svg>
                                             </div>
@@ -239,7 +239,7 @@ export default function BreadCrumbs (props) {
                                                     <path
                                                         d="M0.5 0V31L10.5 41L0.5 51V82"
                                                         stroke="currentcolor"
-                                                        vector-effect="non-scaling-stroke"
+                                                        vectorEffect="non-scaling-stroke"
                                                     />
                                                 </svg>
                                             </div>
