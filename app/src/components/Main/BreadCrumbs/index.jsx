@@ -16,7 +16,7 @@ export default function BreadCrumbs (props) {
                                         <img className="h-full w-full object-cover" src={props.dataBC.pathImg} alt="рубрика" />
                                         <div className="absolute inset-0 bg-gray-800 mix-blend-multiply" />
                                     </div>
-                                    <div className="relative px-4 py-12 sm:px-6 sm:py-16 lg:py-24 lg:px-8 ">
+                                    <div className="relative px-4 py-8 sm:px-6 sm:py-16 lg:py-12 lg:px-8 ">
                                         <div className="mx-auto pb-8 flex space-x-4 justify-center">
                                             <div className="flex">
                                                 <div className="flex items-center">
@@ -112,12 +112,12 @@ export default function BreadCrumbs (props) {
                                                 <button
                                                     onClick={() => {is_visible_form_measurement(true)}}
                                                     type="button"
-                                                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-green-400 px-4 py-3 text-base font-medium text-gray-100 shadow-sm sm:px-8 bg-opacity-30 hover:bg-opacity-20"
+                                                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-green-400 px-3 py-2 text-base font-medium text-gray-100 shadow-sm sm:px-8 bg-opacity-30 hover:bg-opacity-20"
                                                     >Записаться на замер
                                                 </button>
                                                 <Link
                                                     href="#models"
-                                                    className="flex items-center justify-center rounded-md border border-transparent bg-gray-500 bg-opacity-60 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+                                                    className="flex items-center justify-center rounded-md border border-transparent bg-gray-500 bg-opacity-60 px-3 py-2 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
                                                     >Посмотреть варианты
                                                 </Link>
                                             </div>
