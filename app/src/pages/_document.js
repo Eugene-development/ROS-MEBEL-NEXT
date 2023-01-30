@@ -18,6 +18,9 @@ class MyDocument extends Document {
                         rel="icon"
                         href="https://storage.yandexcloud.net/brand-logo/mos-mebel/favicon.svg"
                     />
+                    <script
+                        src="//code.jivosite.com/widget/iuXBLJcIxk"
+                        async></script>
 
                     <script
                         type="text/javascript"
