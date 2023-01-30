@@ -20,7 +20,7 @@ export default function Hero() {
 
   return (
     <>
-    <div className="isolate bg-white">
+    <div className="isolate bg-gray-50">
       {/* <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
@@ -105,7 +105,14 @@ export default function Hero() {
                   </button>
                 </div>
               </div>
-              <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+              {/* <div>
+                <img
+                    className="absolute top-0 left-1/2 w-[1440px] max-w-none -translate-x-1/2 object-fill opacity-80"
+                    src="https://tailwindui.com/img/component-images/grid-blur-purple-on-black.jpg"
+                    alt=""
+                />
+              </div> */}
+              {/* <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
                 <svg
                   className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
                   viewBox="0 0 1155 678"
@@ -131,7 +138,7 @@ export default function Hero() {
                     </linearGradient>
                   </defs>
                 </svg>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
