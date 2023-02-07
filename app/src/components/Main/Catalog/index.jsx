@@ -33,20 +33,20 @@ const tiers = [
         'ЛДСП',
     ],
   },
-  {
-    id: 'tier-team',
-    name: 'Категория',
-    href: 'kuhni',
-    category: 'Детская мебель',
-    description: 'Раздел в разработке Раздел в разработке Раздел в разработке Раздел в разработке Раздел в разработке',
-    features: [
-        'Раздел в разработке',
-        'Раздел в разработке',
-        'Раздел в разработке',
-        'Раздел в разработке',
-        'Раздел в разработке',
-    ],
-  },
+//   {
+//     id: 'tier-team',
+//     name: 'Категория',
+//     href: 'kuhni',
+//     category: 'Детская мебель',
+//     description: 'Раздел в разработке Раздел в разработке Раздел в разработке Раздел в разработке Раздел в разработке',
+//     features: [
+//         'Раздел в разработке',
+//         'Раздел в разработке',
+//         'Раздел в разработке',
+//         'Раздел в разработке',
+//         'Раздел в разработке',
+//     ],
+//   },
 ]
 
 export default function Catalog() {
@@ -77,7 +77,7 @@ export default function Catalog() {
       <div className="flow-root bg-white pb-32 lg:pb-40">
         <div className="relative -mt-80">
           <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-7xl lg:grid-cols-3 lg:gap-8">
+            <div className="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-7xl lg:grid-cols-2 lg:gap-8">
               {tiers.map((tier, i) => (
                 <div key={i} className="flex flex-col rounded-3xl bg-white shadow-xl ring-1 ring-black/10">
                   <div className="p-8 sm:p-10">

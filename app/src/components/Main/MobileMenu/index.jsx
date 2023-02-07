@@ -123,7 +123,7 @@ export default function MobileMenu() {
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-gray-200' : 'text-gray-100 -rotate-90',
-                          'ml-2 h-5 w-5 group-hover:text-gray-500'
+                          'ml-2 h-5 w-5 group-hover:text-gray-500 animate-pulse'
                         )}
                         aria-hidden="true"
                       />
