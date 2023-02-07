@@ -38,7 +38,7 @@ const types = [
 		name: 'Встроенные шкафы',
 		description: 'Безкаркасные шкафы встроенные в нишу с полками, ящиками и специальной фурнитурой',
 		href: 'shkafy/vstroenie',
-		imageSrc: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/5.jpg',
+		imageSrc: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV4/shkafi/unona.jpeg',
         imageAlt: 'Шкафы',
 	},
 	{
@@ -59,7 +59,7 @@ const types = [
 		name: 'Офисные шкафы',
 		description: 'Стильные и строгие варианты шкафов для офисных помещений или для вашего дома',
 		href: 'shkafy/ofisnie',
-		imageSrc: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/7.jpg',
+		imageSrc: 'https://i.pinimg.com/originals/29/58/54/295854b22cff201681b0459f4b94b5c2.jpg',
         imageAlt: 'Шкафы',
 	}
 ];
