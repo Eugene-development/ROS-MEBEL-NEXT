@@ -86,9 +86,9 @@ export default function Hero() {
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
                   <Link
                     href="/catalog"
-                    className="inline-block rounded-lg bg-gradient-to-tr from-blue-600 via-blue-700 to-blue-600 hover:bg-gradient-to-bl px-5 py-1.5 text-sm sm:text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-600 hover:bg-blue-700 hover:ring-blue-700"
+                    className="inline-block rounded-lg bg-gradient-to-tr from-blue-600 via-blue-700 to-blue-600 hover:bg-gradient-to-bl px-4 md:px-6 py-1.5 text-sm sm:text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-600 hover:bg-blue-700 hover:ring-blue-700"
                   >
-                    Посмотреть каталог{' '}
+                    Наш каталог{' '}
                     <span className="text-blue-50" aria-hidden="true">
                       &rarr;
                     </span>
@@ -96,7 +96,7 @@ export default function Hero() {
                   <button
                     onClick={() => {is_visible_form_measurement(true)}}
                     type="button"
-                    className="inline-block rounded-lg px-5 py-1.5 text-sm sm:text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+                    className="inline-block rounded-lg px-4 md:px-6 py-1.5 text-sm sm:text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
                   >
                     Запись на замер{' '}
                     <span className="text-gray-400" aria-hidden="true">
