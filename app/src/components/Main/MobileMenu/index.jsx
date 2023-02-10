@@ -152,7 +152,7 @@ export default function MobileMenu() {
                     <Popover.Button
                       className={classNames(
                         open ? 'text-gray-50 ' : 'text-gray-50',
-                        'px-1 group inline-flex items-center rounded-md bg-gray-900 text-base font-medium hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+                        'px-1.5 group inline-flex items-center rounded-md bg-gray-900 text-base font-medium hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
                       )}
                     >
                       <span>Каталог</span>
@@ -262,7 +262,7 @@ export default function MobileMenu() {
                     <Popover.Button
                       className={classNames(
                         open ? 'text-gray-50 ' : 'text-gray-50',
-                        'px-1 group inline-flex items-center rounded-md bg-gray-900 text-base font-medium hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+                        'px-1.5 group inline-flex items-center rounded-md bg-gray-900 text-base font-medium hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
                       )}
                     >
                       <span>Информация</span>

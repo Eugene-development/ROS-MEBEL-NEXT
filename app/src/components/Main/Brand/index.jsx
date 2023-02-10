@@ -25,7 +25,7 @@ export default function Brand () {
                 </p>
                 <ul
                 role="list"
-                className=" flex items-center justify-center gap-x-8 sm:gap-x-10 xl:gap-x-12"
+                className=" flex items-center justify-center gap-x-4 sm:gap-x-8 xl:gap-x-12"
                 >
                 {brands.map((company, groupIndex) => (
                     <li key={groupIndex}>
