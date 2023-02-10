@@ -58,7 +58,7 @@ export default function Hero() {
                     Посетите наш мебельный блог.{' '}
                     <Link href="/blog" className="font-semibold text-blue-600">
                       <span className="absolute inset-0" aria-hidden="true" />
-                      Почитать <span aria-hidden="true">&rarr;</span>
+                      Почитать <span aria-hidden="true" >&rarr;</span>
                     </Link>
                   </span>
                 </div>
@@ -89,7 +89,7 @@ export default function Hero() {
                     className="inline-block rounded-lg bg-gradient-to-tr from-blue-600 via-blue-700 to-blue-600 hover:bg-gradient-to-bl px-4 md:px-6 py-1.5 text-sm sm:text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-600 hover:bg-blue-700 hover:ring-blue-700"
                   >
                     Наш каталог{' '}
-                    <span className="text-blue-50" aria-hidden="true">
+                    <span className="text-blue-50 animate-pulse" aria-hidden="true">
                       &rarr;
                     </span>
                   </Link>

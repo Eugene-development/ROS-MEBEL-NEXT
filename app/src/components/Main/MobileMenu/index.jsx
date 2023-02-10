@@ -14,6 +14,10 @@ import {
   ShieldCheckIcon,
   Squares2X2Icon,
   XMarkIcon,
+  InformationCircleIcon,
+  BuildingOfficeIcon,
+  NewspaperIcon,
+  BriefcaseIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
@@ -69,6 +73,48 @@ const recentPosts = [
   { id: 3, name: 'Improve your customer experience', href: '#' },
 ]
 
+const kitchens = [
+  { name: 'МДФ ПВХ', href: '/kuhni/mdf', icon: ChevronDownIcon },
+  { name: 'Патина', href: '/kuhni/patina', icon: ChevronDownIcon },
+  { name: 'Пластик', href: '/kuhni/plastic', icon: ChevronDownIcon },
+  { name: 'Эмаль', href: '/kuhni/emal', icon: ChevronDownIcon },
+  { name: 'Акрил', href: '/kuhni/akril', icon: ChevronDownIcon },
+  { name: 'ЛДСП', href: '/kuhni/ldsp', icon: ChevronDownIcon },
+]
+const wardrobes = [
+  { name: 'Купе', href: '/shkafy/kupe', icon: ChevronDownIcon },
+  { name: 'Распашные', href: '/shkafy/raspashnie', icon: ChevronDownIcon },
+  { name: 'Встроенные', href: '/shkafy/vstroenie', icon: ChevronDownIcon },
+  { name: 'Гардеробные', href: '/shkafy/garderobnie', icon: ChevronDownIcon },
+  { name: 'Двери', href: '/shkafy/dveri', icon: ChevronDownIcon },
+  { name: 'Офисные', href: '/shkafy/ofisnie', icon: ChevronDownIcon },
+]
+
+// const resources = [
+//   { name: 'Community', href: '#', icon: UserGroupIcon },
+//   { name: 'Partners', href: '#', icon: GlobeAltIcon },
+//   { name: 'Guides', href: '#', icon: BookmarkSquareIcon },
+//   { name: 'Webinars', href: '#', icon: ComputerDesktopIcon },
+// ]
+const blogPosts = [
+  {
+    id: 1,
+    name: 'Boost your conversion rate',
+    href: '#',
+    preview: 'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80',
+  },
+  {
+    id: 2,
+    name: 'How to use search engine optimization to drive traffic to your site',
+    href: '#',
+    preview: 'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2300&q=80',
+  },
+]
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -100,9 +146,109 @@ export default function MobileMenu() {
               <Link href="/" className="text-base font-medium text-gray-50 hover:text-gray-100">
                 Главная
               </Link>
-              <Link href="/catalog" className="text-base font-medium text-gray-50 hover:text-gray-100">
+              <Popover>
+                {({ open }) => (
+                  <>
+                    <Popover.Button
+                      className={classNames(
+                        open ? 'text-gray-50 ' : 'text-gray-50',
+                        'px-1 group inline-flex items-center rounded-md bg-gray-900 text-base font-medium hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+                      )}
+                    >
+                      <span>Каталог</span>
+                      <ChevronDownIcon
+                        className={classNames(
+                          open ? 'text-gray-200' : 'text-gray-100 -rotate-90',
+                          'ml-2 h-5 w-5 group-hover:text-gray-500 animate-pulse'
+                        )}
+                        aria-hidden="true"
+                      />
+                    </Popover.Button>
+
+                    <Transition
+                      as={Fragment}
+                      enter="transition ease-out duration-200"
+                      enterFrom="opacity-0 -translate-y-1"
+                      enterTo="opacity-100 translate-y-0"
+                      leave="transition ease-in duration-150"
+                      leaveFrom="opacity-100 translate-y-0"
+                      leaveTo="opacity-0 -translate-y-1"
+                    >
+                      <Popover.Panel className="absolute inset-x-0 top-full z-30 hidden transform shadow-lg md:block">
+                        <div className="absolute inset-0 flex">
+                          <div className="w-1/2 bg-white" />
+                          <div className="w-1/2 bg-gray-50" />
+                        </div>
+                        <div className="relative mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+                          <nav className="grid gap-y-10 bg-white px-4 py-8 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
+                            <div>
+                              <h3 className="text-xl font-medium text-gray-700">Кухни</h3>
+                              <ul role="list" className="mt-5 space-y-6">
+                                {kitchens.map((item) => (
+                                  <li key={item.name} className="flow-root">
+                                    <Link
+                                      href={item.href}
+                                      className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-50"
+                                    >
+                                      <item.icon className="h-6 w-6 flex-shrink-0 text-gray-400 -rotate-90" aria-hidden="true" />
+                                      <span className="ml-4">{item.name}</span>
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div>
+                              <h3 className="text-xl font-medium text-gray-700">Шкафы</h3>
+                              <ul role="list" className="mt-5 space-y-6">
+                                {wardrobes.map((item) => (
+                                  <li key={item.name} className="flow-root">
+                                    <a
+                                      href={item.href}
+                                      className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-50"
+                                    >
+                                      <item.icon className="h-6 w-6 flex-shrink-0 text-gray-400 -rotate-90" aria-hidden="true" />
+                                      <span className="ml-4">{item.name}</span>
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </nav>
+                          <div className="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+                            <div>
+                              <h3 className="text-base font-medium text-gray-700">Наш мебельный блог</h3>
+                              <ul role="list" className="mt-6 space-y-6">
+                                {blogPosts.map((post) => (
+                                  <li key={post.id} className="flow-root">
+                                    <a href={post.href} className="-m-3 flex rounded-lg p-3 hover:bg-gray-100">
+                                      <div className="hidden flex-shrink-0 sm:block">
+                                        <img className="h-20 w-32 rounded-md object-cover" src={post.imageUrl} alt="" />
+                                      </div>
+                                      <div className="w-0 flex-1 sm:ml-8">
+                                        <h4 className="truncate text-base font-medium text-gray-900">{post.name}</h4>
+                                        <p className="mt-1 text-sm text-gray-500">{post.preview}</p>
+                                      </div>
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div className="mt-6 text-sm font-medium">
+                              <Link href="/blog" className="text-red-800 hover:text-red-600">
+                                Просмотреть все посты
+                                <span aria-hidden="true"> &rarr;</span>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </Popover.Panel>
+                    </Transition>
+                  </>
+                )}
+              </Popover>
+              {/* <Link href="/catalog" className="text-base font-medium text-gray-50 hover:text-gray-100">
                 Каталог
-              </Link>
+              </Link> */}
               <Link href="/blog" className="text-base font-medium text-gray-50 hover:text-gray-100">
                 Блог
               </Link>
@@ -116,7 +262,7 @@ export default function MobileMenu() {
                     <Popover.Button
                       className={classNames(
                         open ? 'text-gray-50 ' : 'text-gray-50',
-                        'px-2 group inline-flex items-center rounded-md bg-gray-900 text-base font-medium hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+                        'px-1 group inline-flex items-center rounded-md bg-gray-900 text-base font-medium hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
                       )}
                     >
                       <span>Информация</span>
