@@ -13,7 +13,8 @@ const Banner = () => {
                     <div className="flex flex-wrap items-center justify-between">
                         <div className="flex w-0 flex-1 items-center">
                             <span className="flex rounded-lg bg-red-900 p-2">
-                            <MegaphoneIcon className="h-6 w-6 text-white" aria-hidden="true" />                            </span>
+                            <MegaphoneIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                            </span>
                             <p className="ml-3 truncate font-bold text-white">
                                 <span className="md:hidden">У нас есть для вас акции!</span>
                                 <span className="hidden md:inline"
