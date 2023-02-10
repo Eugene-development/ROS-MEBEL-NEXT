@@ -19,53 +19,48 @@ import {
   NewspaperIcon,
   BriefcaseIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { ChevronRightIcon,  ChevronDownIcon} from '@heroicons/react/20/solid'
 
 const menu = [
   {
     name: 'Главная',
     href: '/',
-    icon: LifebuoyIcon,
+    icon: ChevronRightIcon,
   },
   {
     name: 'Каталог',
     href: '/catalog',
-    icon: LifebuoyIcon,
+    icon: ChevronRightIcon,
   },
   {
     name: 'Блог',
     href: '/blog',
-    icon: LifebuoyIcon,
+    icon: ChevronRightIcon,
   },
   {
     name: 'Вакансии',
     href: '/vacancy',
-    icon: LifebuoyIcon,
+    icon: ChevronRightIcon,
   },
 ]
-const resources = [
+const information = [
   {
     name: 'Замер',
     description: 'Ответы по вопросам с замерами помещений',
     href: '/information/zamer',
-    icon: LifebuoyIcon,
+    icon: ChevronRightIcon,
   },
   {
     name: 'Проект',
     description: 'Информация по проектированию мебели',
     href: '/information/proekt',
-    icon: BookmarkSquareIcon,
+    icon: ChevronRightIcon,
   },
-  {
-    name: 'Доставка',
-    description: 'Условия доставки ваших заказов',
-    href: '/information/dostavka',
-    icon: CalendarIcon,
-  },
-  { name: 'Сборка', description: 'Общая информация по сборке и установке', href: '/information/ustanovka', icon: ShieldCheckIcon },
-  { name: 'Оплата', description: 'Правила оплаты заказанной мебели', href: '/information/oplata', icon: ShieldCheckIcon },
-  { name: 'Гарантии', description: 'Предоставляемые гарантии на всю продукцию', href: '/information/garantii', icon: ShieldCheckIcon },
-  { name: 'Контакты', description: 'Связь с нашими сотрудниками', href: '/contacts', icon: ShieldCheckIcon },
+  {name: 'Доставка', description: 'Условия доставки ваших заказов', href: '/information/dostavka', icon: ChevronRightIcon,},
+  { name: 'Сборка', description: 'Общая информация по сборке и установке', href: '/information/ustanovka', icon: ChevronRightIcon },
+  { name: 'Оплата', description: 'Правила оплаты заказанной мебели', href: '/information/oplata', icon: ChevronRightIcon },
+  { name: 'Гарантии', description: 'Предоставляемые гарантии на всю продукцию', href: '/information/garantii', icon: ChevronRightIcon },
+  { name: 'Контакты', description: 'Связь с нашими сотрудниками', href: '/contacts', icon: ChevronRightIcon },
 ]
 const recentPosts = [
   { id: 1, name: 'Boost your conversion rate', href: '#' },
@@ -74,28 +69,22 @@ const recentPosts = [
 ]
 
 const kitchens = [
-  { name: 'МДФ ПВХ', href: '/kuhni/mdf', icon: ChevronDownIcon },
-  { name: 'Патина', href: '/kuhni/patina', icon: ChevronDownIcon },
-  { name: 'Пластик', href: '/kuhni/plastic', icon: ChevronDownIcon },
-  { name: 'Эмаль', href: '/kuhni/emal', icon: ChevronDownIcon },
-  { name: 'Акрил', href: '/kuhni/akril', icon: ChevronDownIcon },
-  { name: 'ЛДСП', href: '/kuhni/ldsp', icon: ChevronDownIcon },
+  { name: 'МДФ ПВХ', href: '/kuhni/mdf', icon: ChevronRightIcon },
+  { name: 'Патина', href: '/kuhni/patina', icon: ChevronRightIcon },
+  { name: 'Пластик', href: '/kuhni/plastic', icon: ChevronRightIcon },
+  { name: 'Эмаль', href: '/kuhni/emal', icon: ChevronRightIcon },
+  { name: 'Акрил', href: '/kuhni/akril', icon: ChevronRightIcon },
+  { name: 'ЛДСП', href: '/kuhni/ldsp', icon: ChevronRightIcon },
 ]
 const wardrobes = [
-  { name: 'Купе', href: '/shkafy/kupe', icon: ChevronDownIcon },
-  { name: 'Распашные', href: '/shkafy/raspashnie', icon: ChevronDownIcon },
-  { name: 'Встроенные', href: '/shkafy/vstroenie', icon: ChevronDownIcon },
-  { name: 'Гардеробные', href: '/shkafy/garderobnie', icon: ChevronDownIcon },
-  { name: 'Двери', href: '/shkafy/dveri', icon: ChevronDownIcon },
-  { name: 'Офисные', href: '/shkafy/ofisnie', icon: ChevronDownIcon },
+  { name: 'Купе', href: '/shkafy/kupe', icon: ChevronRightIcon },
+  { name: 'Распашные', href: '/shkafy/raspashnie', icon: ChevronRightIcon },
+  { name: 'Встроенные', href: '/shkafy/vstroenie', icon: ChevronRightIcon },
+  { name: 'Гардеробные', href: '/shkafy/garderobnie', icon: ChevronRightIcon },
+  { name: 'Двери', href: '/shkafy/dveri', icon: ChevronRightIcon },
+  { name: 'Офисные', href: '/shkafy/ofisnie', icon: ChevronRightIcon },
 ]
 
-// const resources = [
-//   { name: 'Community', href: '#', icon: UserGroupIcon },
-//   { name: 'Partners', href: '#', icon: GlobeAltIcon },
-//   { name: 'Guides', href: '#', icon: BookmarkSquareIcon },
-//   { name: 'Webinars', href: '#', icon: ComputerDesktopIcon },
-// ]
 const blogPosts = [
   {
     id: 1,
@@ -190,7 +179,7 @@ export default function MobileMenu() {
                                       href={item.href}
                                       className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-50"
                                     >
-                                      <item.icon className="h-6 w-6 flex-shrink-0 text-gray-400 -rotate-90" aria-hidden="true" />
+                                      <item.icon className="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
                                       <span className="ml-4">{item.name}</span>
                                     </Link>
                                   </li>
@@ -206,7 +195,7 @@ export default function MobileMenu() {
                                       href={item.href}
                                       className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-50"
                                     >
-                                      <item.icon className="h-6 w-6 flex-shrink-0 text-gray-400 -rotate-90" aria-hidden="true" />
+                                      <item.icon className="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
                                       <span className="ml-4">{item.name}</span>
                                     </a>
                                   </li>
@@ -287,13 +276,13 @@ export default function MobileMenu() {
                       <Popover.Panel className="absolute left-1/2 z-30 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0 ">
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                           <div className="relative grid gap-5 bg-slate-100 px-5 py-6 sm:gap-5 sm:p-8">
-                            {resources.map((item) => (
+                            {information.map((item) => (
                               <Link
                                 key={item.name}
                                 href={item.href}
                                 className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                               >
-                                {/* <item.icon className="h-6 w-6 flex-shrink-0 text-red-900" aria-hidden="true" /> */}
+                                <item.icon className="h-6 w-6 flex-shrink-0 text-red-900" aria-hidden="true" />
                                 <div className="ml-4">
                                   <p className="text-base font-medium text-gray-900">{item.name}</p>
                                   <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -340,7 +329,7 @@ export default function MobileMenu() {
                     </div>
           </div>
         </div>
-
+{/* Мобильное меню */}
         <Transition
           as={Fragment}
           enter="duration-200 ease-out"
@@ -352,7 +341,7 @@ export default function MobileMenu() {
         >
           <Popover.Panel
             focus
-            className="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition lg:hidden"
+            className="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition lg:hidden"
           >
             <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
               <div className="px-5 pt-5 pb-6">
@@ -379,20 +368,20 @@ export default function MobileMenu() {
                         href={item.href}
                         className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                       >
-                        <item.icon className="h-6 w-6 flex-shrink-0 text-gray-800" aria-hidden="true" />
+                        <item.icon className="h-6 w-6 flex-shrink-0 text-red-900" aria-hidden="true" />
                         <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
                       </Link>
                     ))}
                   </nav>
                 </div>
               </div>
-              <div className="space-y-6 py-6 px-5">
-                <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                  {resources.map((item) => (
+              <div className="space-y-6 py-6 px-5 bg-gray-800">
+                <div className="grid grid-cols-2 gap-y-4 gap-x-8 ">
+                  {information.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="text-base font-medium text-gray-900 hover:text-gray-700"
+                      className="text-base font-medium text-gray-50 hover:text-gray-100"
                     >
                       {item.name}
                     </Link>
@@ -400,10 +389,10 @@ export default function MobileMenu() {
                 </div>
                     <div className="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
                         <div
-                            className="flex rounded-lg px-3 py-1.5 text-xl font-semibold leading-6 text-gray-900 shadow-sm ring-2 ring-gray-50/10 hover:ring-gray-500/20"
+                            className="flex rounded-lg px-3 py-1.5 text-xl font-semibold leading-6 text-gray-50 shadow-sm ring-2 ring-gray-200/100 hover:ring-gray-500/20"
                         >
                             <PhoneIcon className="block h-6 w-6" aria-hidden="true" />
-                            <Link href="tel:79801506943" className="ml-2 text-gray-700 text-lg font-bold "
+                            <Link href="tel:79801506943" className="ml-2 text-lg font-bold "
                                 >8 (980) 150-69-43
                             </Link>
                         </div>
