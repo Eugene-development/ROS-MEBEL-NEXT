@@ -99,19 +99,19 @@ const wardrobes = [
 const blogPosts = [
   {
     id: 1,
-    name: 'Boost your conversion rate',
-    href: '#',
-    preview: 'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    name: 'Как правильно выбрать шкаф купе для спальни',
+    href: '/blog/post/1',
+    preview: 'Помимо удобной кровати или трельяжа в спальной комнате неизменно присутствуют и другие предметы мебели таки...',
     imageUrl:
-      'https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80',
+      'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV4/shkafi/komfort-6.jpeg',
   },
   {
     id: 2,
-    name: 'How to use search engine optimization to drive traffic to your site',
-    href: '#',
-    preview: 'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    name: 'Современный кухонный гарнитур на заказ',
+    href: '/blog/post/2',
+    preview: 'Кухня в любом доме или квартире является олицетворением домашнего очага и уюта. Это объясняет тот факт, что...',
     imageUrl:
-      'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2300&q=80',
+      'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV4/kuhni/elina.jpeg',
   },
 ]
 
@@ -220,7 +220,7 @@ export default function MobileMenu() {
                               <ul role="list" className="mt-6 space-y-6">
                                 {blogPosts.map((post) => (
                                   <li key={post.id} className="flow-root">
-                                    <a href={post.href} className="-m-3 flex rounded-lg p-3 hover:bg-gray-100">
+                                    <Link href={post.href} className="-m-3 flex rounded-lg p-3 hover:bg-gray-100">
                                       <div className="hidden flex-shrink-0 sm:block">
                                         <img className="h-20 w-32 rounded-md object-cover" src={post.imageUrl} alt="" />
                                       </div>
@@ -228,7 +228,7 @@ export default function MobileMenu() {
                                         <h4 className="truncate text-base font-medium text-gray-900">{post.name}</h4>
                                         <p className="mt-1 text-sm text-gray-500">{post.preview}</p>
                                       </div>
-                                    </a>
+                                    </Link>
                                   </li>
                                 ))}
                               </ul>
