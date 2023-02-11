@@ -1,4 +1,6 @@
 import Link from "next/link"
+import React from 'react';
+
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -67,7 +69,6 @@ const recentPosts = [
   { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
   { id: 3, name: 'Improve your customer experience', href: '#' },
 ]
-
 const kitchens = [
   { name: 'МДФ ПВХ', href: '/kuhni/mdf', icon: ChevronRightIcon },
   { name: 'Патина', href: '/kuhni/patina', icon: ChevronRightIcon },
@@ -84,7 +85,6 @@ const wardrobes = [
   { name: 'Двери', href: '/shkafy/dveri', icon: ChevronRightIcon },
   { name: 'Офисные', href: '/shkafy/ofisnie', icon: ChevronRightIcon },
 ]
-
 const blogPosts = [
   {
     id: 1,
@@ -108,12 +108,30 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function MobileMenu() {
+export default function Menu() {
+    const headerRef = React.useRef(null);
+    const [isFixed, setIsFixed] = React.useState(false);
+
+    const handleScroll = () => {
+        const headerHeight = headerRef.current.offsetHeight;
+        setIsFixed(window.scrollY > headerHeight);
+    };
+
+    React.useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
+
   return (
     <>
-    <div className="">
-        <div className="relative bg-gray-900 z-40">
-        <Popover className="relative bg-gray-900 shadow ">
+    <div className={`${isFixed ? "fixed top-0 left-0 right-0 z-40" : ""}`} ref={headerRef}>
+        <div className="relative bg-gray-900">
+        <Popover className="relative bg-gray-900 shadow">
             <div className="mx-auto max-w-full px-6">
             <div className="flex items-center justify-between py-3 lg:justify-start lg:space-x-8">
                 <div className="flex justify-start lg:w-0 lg:flex-1">
