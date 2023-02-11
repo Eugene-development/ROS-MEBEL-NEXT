@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -34,7 +32,7 @@ export default function Information(prop) {
       <div className="bg-blue-900">
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
           <h2 className="text-4xl font-bold tracking-tight text-white">{prop.heading}</h2>
-          <motion.div className="mt-6 border-t border-blue-400 border-opacity-25 pt-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+          <div className="mt-6 border-t border-blue-400 border-opacity-25 pt-10" >
             <dl className="space-y-10 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12 md:space-y-0">
               {prop.info.map((item, i) => (
                 <div key={i} >
@@ -43,7 +41,7 @@ export default function Information(prop) {
                 </div>
               ))}
             </dl>
-          </motion.div>
+          </div>
         </div>
       </div>
 

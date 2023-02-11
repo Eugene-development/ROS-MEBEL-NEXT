@@ -13,7 +13,7 @@ export default () => {
 
     return (
         <>
-            <MainLayout>
+            <MainLayout >
                 <Head>
                     <title>{title}</title>
                     <meta name="description" content={description} />

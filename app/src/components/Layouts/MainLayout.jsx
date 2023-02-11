@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Header from './Header';
 import Footer from './Footer';
 import Banner from '../Main/Banner';
@@ -11,7 +12,7 @@ const MainLayout = ({ children }) => {
 
             <Banner/>
             <Header/>
-                <main>{children}</main>
+                <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }}>{children}</motion.main>
             <Footer/>
             <FormMeasurement/>
         </div>

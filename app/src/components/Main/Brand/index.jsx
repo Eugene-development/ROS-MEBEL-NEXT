@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import { motion } from "framer-motion";
-
 import logoHettich from '@/images/logos/hettich-international.svg';
 import logoBlum from '@/images/logos/blum.svg';
 import logoGrass from '@/images/logos/grass.svg';
@@ -20,7 +18,7 @@ const brands = [
 export default function Brand () {
     return (
         <>
-            <motion.div className="mt-8 mb-4 lg:mt-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <div className="mt-8 mb-4 lg:mt-10">
                 <p className="font-display text-base text-center text-slate-900">
                 Фурнитура, которой мы доверяем:
                 </p>
@@ -38,7 +36,7 @@ export default function Brand () {
                     </li>
                 ))}
                 </ul>
-            </motion.div>
+            </div>
         </>
     )
 }
