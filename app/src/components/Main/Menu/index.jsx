@@ -127,7 +127,7 @@ export default function Menu() {
 
     return (
         <>
-            <div className={`${isFixed ? "fixed top-0 left-0 right-0 z-40" : ""}`} ref={headerRef}>
+            <div className={`${isFixed ? "sticky top-0 z-40" : ""}`} ref={headerRef}>
                 <div className="relative bg-gray-900">
                     <Popover className="relative bg-gray-900 shadow">
                         <div className="mx-auto max-w-full px-6">
