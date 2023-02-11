@@ -2,7 +2,6 @@ import Header from './Header';
 import Footer from './Footer';
 import Banner from '../Main/Banner';
 import FormMeasurement from '@/components/Main/Forms/Measurement';
-import MobileMenu from '../Main/MobileMenu';
 
 const MainLayout = ({ children }) => {
 
