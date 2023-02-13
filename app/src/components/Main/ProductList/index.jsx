@@ -1,7 +1,7 @@
 export default function ProductList (prop) {
     return (
         <>
-            <div id="models" className="bg-gray-100">
+            <div id="models" className="bg-gray-50">
                 <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-16 ">
                     <div className="space-y-12">
                         {/* <div className="space-y-5 text-center sm:space-y-4">
@@ -28,7 +28,7 @@ export default function ProductList (prop) {
                             {/each} */}
                             {prop.products.map(({name, text, img}, i) => (
                                 <div key={i}
-                                    className="transition ease-in-out hover:scale-105 py-10 px-6 text-center rounded-lg xl:px-8 xl:text-left shadow-2xl shadow-gray-600"
+                                    className="bg-white transition ease-in-out hover:scale-105 py-10 px-6 text-center rounded-lg xl:px-8 xl:text-left shadow-xl shadow-gray-400 border-gray-200 border-2"
                                 >
                                     <div className="space-y-8 xl:space-y-10">
                                         <img className="mx-auto  rounded-md h-64 object-cover" src={img} />
